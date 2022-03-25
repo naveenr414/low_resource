@@ -1,0 +1,5 @@
+src en, target de
+train_data data/en-de/processed_data/wikititles
+valid_data data/test/flores/dev/dev
+test_data data/test/flores/devtest/devtest
+settings: {'max_epochs': 20}

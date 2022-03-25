@@ -1,0 +1,7 @@
+zigyNp3p
+fairseq/
+data/
+experiments/bin
+experiments/checkpoints
+experiments/data
+experiments/runs
