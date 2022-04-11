@@ -1,0 +1,5 @@
+src en, target de
+train_data data/en-de/processed_data/wikititles
+valid_data data/en-de/processed_data/wikititles
+test_data data/en-de/processed_data/wikititles
+settings: {'max_epochs': 800, 'lr': '2e-4'}

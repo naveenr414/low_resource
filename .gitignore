@@ -4,4 +4,7 @@ data/
 experiments/bin
 experiments/checkpoints
 experiments/data
+experiments/hyperparameters
 experiments/runs
+experiments/tensorboard
+programs/

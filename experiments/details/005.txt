@@ -1,0 +1,5 @@
+src en, target de
+train_data data/en-de/processed_data/iwslt/train
+valid_data data/en-de/processed_data/iwslt/valid
+test_data data/en-de/processed_data/iwslt/test
+settings: {'max_epochs': 40, 'lr': '5e-4'}
