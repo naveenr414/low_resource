@@ -1,0 +1,7 @@
+src de, target en
+train_data data/en-de/processed_data/iwslt/train
+valid_data data/en-de/processed_data/iwslt/valid
+test_data data/test/flores/devtest/devtest
+settings: {'max_epochs': 90}
+dataset size: train 10**6, valid 7500, test 100000, hyperparameter 100
+model: iwslt_de_en

@@ -9,6 +9,7 @@ def run_experiment(name,src,target,train_data,valid_data,test_data,num_train, nu
     w.write("valid_data {}\n".format(", ".join(valid_data)))
     w.write("test_data {}\n".format(", ".join(test_data)))
     w.write("settings: {}\n".format(str(settings)))
+    w.write("dataset size: train {}, valid {}, test {}, hyperparameter {}\n".format(num_train,num_valid,num_test,num_hyperparameter))
     w.close()
     
     # Prepare data
@@ -79,7 +80,7 @@ fairseq-preprocess --source-lang {} --target-lang {} \
     training_command = """echo '{}'
 CUDA_VISIBLE_DEVICES=0 fairseq-train \
     {} \
-    --arch transformer --share-decoder-input-output-embed \
+    --arch {} --share-decoder-input-output-embed \
     --optimizer adam --adam-betas '(0.9, 0.98)' --clip-norm 0.0 \
     --lr {} --lr-scheduler inverse_sqrt --warmup-updates 4000 \
     --dropout 0.3 --weight-decay 0.0001 \
@@ -101,40 +102,51 @@ CUDA_VISIBLE_DEVICES=0 fairseq-train \
     --batch-size 128 --beam 5 --remove-bpe --source-lang {} --target-lang {}"""
     
 
-    lr_list = [0.1,0.01,0.001,0.0001,0.00001]
-    # Setup training + cleanup
-    for i, lr in enumerate(lr_list):
-        os.system("mkdir experiments/hyperparameters/checkpoints/{}/{}".format(name,i))
-        w = open("experiments/submit2.sh","w")
-        hyperparameter_epochs = 5
-        training_lr_command = training_command.format('{}_{}'.format(name,lr), 'hyperparameters/data/{}'.format(name), lr, hyperparameter_epochs, 'hyperparameters/checkpoints/{}/{}'.format(name,i),name)
-        evaluation_lr_command = evaluation_command.format('hyperparameters/data/{}'.format(name),"hyperparameters/checkpoints/{}/{}/checkpoint_best.pt".format(name,i),src,target)        
-        
-        w = open("experiments/submit2.sh","w")
-        w.write("#!/bin/bash")
-        w.write("\n")
-        w.write(training_lr_command)
-        w.write(evaluation_lr_command + "> hyperparameters/checkpoints/{}/{}/output.txt".format(name,i))
-        w.close()
-        
-        os.system("cd experiments; bash submit_small.sh {}".format("{}_{}".format(name,lr)))
+    if 'lr' not in settings:
+        lr_list = [0.1, 0.05, 0.01, 0.005, 0.001, 0.0005, 0.0001, 5e-05, 1e-05]
+        # Setup training + cleanup
+        for i, lr in enumerate(lr_list):
+            os.system("mkdir experiments/hyperparameters/checkpoints/{}/{}".format(name,i))
+            w = open("experiments/submit2.sh","w")
+            hyperparameter_epochs = 10
+            training_lr_command = training_command.format('{}_{}'.format(name,lr), 'hyperparameters/data/{}'.format(name), 'transformer', lr, hyperparameter_epochs, 'hyperparameters/checkpoints/{}/{}'.format(name,i),"hyperparameters")
+            evaluation_lr_command = evaluation_command.format('hyperparameters/data/{}'.format(name),"hyperparameters/checkpoints/{}/{}/checkpoint_best.pt".format(name,i),src,target)        
+
+            w = open("experiments/submit2.sh","w")
+            w.write("#!/bin/bash")
+            w.write("\n")
+            w.write(training_lr_command)
+            w.write(evaluation_lr_command + "> hyperparameters/checkpoints/{}/{}/output.txt".format(name,i))
+            w.close()
+
+            os.system("cd experiments; bash submit_small.sh {}".format("{}_{}".format(name,lr)))
         
     max_epochs = 20
     if 'max_epochs' in settings:
         max_epochs = settings['max_epochs']     
 
-    training_main = training_command.format(name,'bin/{}'.format(name),"$LR",max_epochs,'checkpoints/'+name,name)
+    model = 'transformer'
+    if 'model' in settings:
+        model = settings['model']
+
+    training_main = training_command.format(name,'bin/{}'.format(name),model,"$LR",max_epochs,'checkpoints/'+name,name)
     
     w = open("experiments/submit2.sh","w")
     w.write("#!/bin/bash")
     w.write("\n")
-    w.write("LR=$(python get_best_bleu.py {} \"{}\")".format(name,lr_list))
+    
+    if 'lr' not in settings:
+        w.write("LR=$(python get_best_bleu.py {} \"{}\")".format(name,lr_list))
+    else:
+        w.write("LR={}".format(settings['lr']))
     w.write("\n")
     w.write(training_main)
     w.close()
     
     # Run sbatch
-    os.system("echo 'cd experiments; bash submit.sh {}' | at now + 5 hours".format(name))
+    if 'lr' not in settings:
+        os.system("echo 'cd experiments; bash submit.sh {}' | at now + 3 hours".format(name))
+    else:
+        os.system("cd experiments; bash submit.sh {}".format(name))
     
-run_experiment("001","en","de",['data/en-de/processed_data/iwslt/train'],['data/en-de/processed_data/iwslt/valid'],['data/test/flores/devtest/devtest'],10**5, 10**5, 100000000, 100, {'max_epochs': 40})
-
+run_experiment("028","en","de",['data/en-de/processed_data/commoncrawl'],['data/test/flores/dev/dev'],['data/test/flores/devtest/devtest'],int(1.5*10**5), 1000000000, 100000000, 500, {'max_epochs': 80, 'lr': 0.0001})

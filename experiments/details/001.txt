@@ -1,5 +1,6 @@
 src en, target de
-train_data data/en-de/processed_data/europarl_small
-valid_data data/en-de/processed_data/europarl_small
-test_data data/en-de/processed_data/europarl_small
-settings: {'max_epochs': 20}
+train_data data/en-de/processed_data/iwslt/train
+valid_data data/en-de/processed_data/iwslt/valid
+test_data data/test/flores/devtest/devtest
+settings: {'max_epochs': 40}
+dataset size: train 100000, valid 7500, test 100000, hyperparameter 100

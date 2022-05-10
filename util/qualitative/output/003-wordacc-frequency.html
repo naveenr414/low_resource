@@ -1,0 +1,1806 @@
+<html>
+<head>
+<link rel="stylesheet" href="compare_mt.css">
+</head>
+<script>
+
+function showhide(elem) {
+  var x = document.getElementById(elem);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+<body>
+<h1>word fmeas by frequency bucket</h1>
+ <a name="bucket0"/><h3> Examples for Bucket <1 </h3><a name="bucket1"/><h3> Examples for Bucket 1 </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> babban <em>jami'in</em> shirin rufe jirgin <em>nasa,</em> <em>n.</em> <em>wayne</em> <em>hale</em> <em>jr.</em> ya ce <em>kumburin</em> ya <em>fadi</em> <em>&#8220;bayan</em> lokacin da muke <em>damuwa.&#8221;</em> </td> </tr><tr> <th> 100_data </th>
+  <td> shugaban kasa muhammadu buhari ya bayyana hakan ne a ranar laraba. </td> </tr><tr> <th> 150_data </th>
+  <td> shugaban shirin <em>nasa,</em> <em>n.</em> <em>wayne</em> <em>hale</em> <em>jr.</em> ya ce kumfa ya auku "bayan lokacin da muke damuwa game da fita." </td> </tr>
+</table>
+ <br/><button onclick="showhide('003_latex')">Show/Hide LaTeX</button> <br/><pre id="003_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & babban \textlessem\textgreaterjami'in\textless/em\textgreater shirin rufe jirgin \textlessem\textgreaternasa,\textless/em\textgreater \textlessem\textgreatern.\textless/em\textgreater \textlessem\textgreaterwayne\textless/em\textgreater \textlessem\textgreaterhale\textless/em\textgreater \textlessem\textgreaterjr.\textless/em\textgreater ya ce \textlessem\textgreaterkumburin\textless/em\textgreater ya \textlessem\textgreaterfadi\textless/em\textgreater \textlessem\textgreater&#8220;bayan\textless/em\textgreater lokacin da muke \textlessem\textgreaterdamuwa.&#8221;\textless/em\textgreater \\
+100_data & shugaban kasa muhammadu buhari ya bayyana hakan ne a ranar laraba. \\
+150_data & shugaban shirin \textlessem\textgreaternasa,\textless/em\textgreater \textlessem\textgreatern.\textless/em\textgreater \textlessem\textgreaterwayne\textless/em\textgreater \textlessem\textgreaterhale\textless/em\textgreater \textlessem\textgreaterjr.\textless/em\textgreater ya ce kumfa ya auku "bayan lokacin da muke damuwa game da fita." \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table003}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> mutanen <em>spain</em> sun fara mulkin mallaka wanda ya &#599;auki <em>&#409;arni</em> uku. </td> </tr><tr> <th> 100_data </th>
+  <td> mutanen espanya fara launin colonization wanda aka jera shi na uku. </td> </tr><tr> <th> 150_data </th>
+  <td> lokacin mutanen espanya sun fara lokacin launin colonization wanda aka dade don <em>&#409;arni</em> uku. </td> </tr>
+</table>
+ <br/><button onclick="showhide('004_latex')">Show/Hide LaTeX</button> <br/><pre id="004_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & mutanen \textlessem\textgreaterspain\textless/em\textgreater sun fara mulkin mallaka wanda ya &#599;auki \textlessem\textgreater&#409;arni\textless/em\textgreater uku. \\
+100_data & mutanen espanya fara launin colonization wanda aka jera shi na uku. \\
+150_data & lokacin mutanen espanya sun fara lokacin launin colonization wanda aka dade don \textlessem\textgreater&#409;arni\textless/em\textgreater uku. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table004}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> koyaya, <em>direban</em> yana &#599;aukar munanan <em>raunuka</em> a kan sa. </td> </tr><tr> <th> 100_data </th>
+  <td> duk da haka, direba ya ci mai tsanani mai tsanani ga head. </td> </tr><tr> <th> 150_data </th>
+  <td> duk da haka, <em>direban</em> ya ci gaba da mummunan rauni ga kai. </td> </tr>
+</table>
+ <br/><button onclick="showhide('005_latex')">Show/Hide LaTeX</button> <br/><pre id="005_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & koyaya, \textlessem\textgreaterdireban\textless/em\textgreater yana &#599;aukar munanan \textlessem\textgreaterraunuka\textless/em\textgreater a kan sa. \\
+100_data & duk da haka, direba ya ci mai tsanani mai tsanani ga head. \\
+150_data & duk da haka, \textlessem\textgreaterdireban\textless/em\textgreater ya ci gaba da mummunan rauni ga kai. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table005}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> wannan na nuna cewa kana iya ziyartar <em>birni</em> mai tarihi na kwanaki da dama yayin da ake dawowa ko yin <em>bacci</em> a cikin jirgin ruwan da dare. </td> </tr><tr> <th> 100_data </th>
+  <td> wannan yana nufin zaka iya ziyarci tarihi city ga wata biyu na cikakken kwanaki yayin dawo da barci a kan jirgin sama. </td> </tr><tr> <th> 150_data </th>
+  <td> wannan yana nufin za ka iya ziyarci tarihi city ga wata kwanaki biyu yayin da dawo da <em>bacci</em> a kan jirgin sama dare. </td> </tr>
+</table>
+ <br/><button onclick="showhide('006_latex')">Show/Hide LaTeX</button> <br/><pre id="006_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & wannan na nuna cewa kana iya ziyartar \textlessem\textgreaterbirni\textless/em\textgreater mai tarihi na kwanaki da dama yayin da ake dawowa ko yin \textlessem\textgreaterbacci\textless/em\textgreater a cikin jirgin ruwan da dare. \\
+100_data & wannan yana nufin zaka iya ziyarci tarihi city ga wata biyu na cikakken kwanaki yayin dawo da barci a kan jirgin sama. \\
+150_data & wannan yana nufin za ka iya ziyarci tarihi city ga wata kwanaki biyu yayin da dawo da \textlessem\textgreaterbacci\textless/em\textgreater a kan jirgin sama dare. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table006}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> kawai abin da na ke ce wa mutane shine <em>ku</em> bi da mu yadda muke bi da <em>ku.</em> </td> </tr><tr> <th> 100_data </th>
+  <td> duk ina gaya mutane ne ka bi mu hanyar da muke bi da <em>ku.</em> </td> </tr><tr> <th> 150_data </th>
+  <td> all ina gaya wa mutane ne ka bi mu da hanyar da muka bi ka. </td> </tr>
+</table>
+ <br/><button onclick="showhide('007_latex')">Show/Hide LaTeX</button> <br/><pre id="007_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & kawai abin da na ke ce wa mutane shine \textlessem\textgreaterku\textless/em\textgreater bi da mu yadda muke bi da \textlessem\textgreaterku.\textless/em\textgreater \\
+100_data & duk ina gaya mutane ne ka bi mu hanyar da muke bi da \textlessem\textgreaterku.\textless/em\textgreater \\
+150_data & all ina gaya wa mutane ne ka bi mu da hanyar da muka bi ka. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table007}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> larabawa kuma sun shigo da <em>musulunci</em> zuwa kasashe kuma ya yi tasiri sosai <em>comoros</em> da <em>mayotte.</em> </td> </tr><tr> <th> 100_data </th>
+  <td> the larabawa kuma kawo <em>musulunci</em> ga &#409;asar, kuma shi ya dauki babban hanya a <em>comoros</em> da <em>mayotte.</em> </td> </tr><tr> <th> 150_data </th>
+  <td> the larabawa kuma kawo <em>musulunci</em> ga &#409;asar, kuma shi ya dauki wata babbar hanya a cikin <em>comoros</em> da <em>mayotte.</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('008_latex')">Show/Hide LaTeX</button> <br/><pre id="008_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & larabawa kuma sun shigo da \textlessem\textgreatermusulunci\textless/em\textgreater zuwa kasashe kuma ya yi tasiri sosai \textlessem\textgreatercomoros\textless/em\textgreater da \textlessem\textgreatermayotte.\textless/em\textgreater \\
+100_data & the larabawa kuma kawo \textlessem\textgreatermusulunci\textless/em\textgreater ga &#409;asar, kuma shi ya dauki babban hanya a \textlessem\textgreatercomoros\textless/em\textgreater da \textlessem\textgreatermayotte.\textless/em\textgreater \\
+150_data & the larabawa kuma kawo \textlessem\textgreatermusulunci\textless/em\textgreater ga &#409;asar, kuma shi ya dauki wata babbar hanya a cikin \textlessem\textgreatercomoros\textless/em\textgreater da \textlessem\textgreatermayotte.\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table008}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> halin da ke tsakanin cututtukan <em>kwakwalwa</em> da halayyar yana tallafawa <em>masana</em> kimiyya a cikin binciken su. </td> </tr><tr> <th> 100_data </th>
+  <td> dangane da tsakanin <em>kwakwalwa</em> pathology da halayyar mu <em>masana</em> kimiyya a cikin bincike. </td> </tr><tr> <th> 150_data </th>
+  <td> dangane da <em>kwakwalwa</em> tsakanin pathology da halayyar mu goyan bayan <em>masana</em> kimiyya a cikin bincikensu. </td> </tr>
+</table>
+ <br/><button onclick="showhide('009_latex')">Show/Hide LaTeX</button> <br/><pre id="009_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & halin da ke tsakanin cututtukan \textlessem\textgreaterkwakwalwa\textless/em\textgreater da halayyar yana tallafawa \textlessem\textgreatermasana\textless/em\textgreater kimiyya a cikin binciken su. \\
+100_data & dangane da tsakanin \textlessem\textgreaterkwakwalwa\textless/em\textgreater pathology da halayyar mu \textlessem\textgreatermasana\textless/em\textgreater kimiyya a cikin bincike. \\
+150_data & dangane da \textlessem\textgreaterkwakwalwa\textless/em\textgreater tsakanin pathology da halayyar mu goyan bayan \textlessem\textgreatermasana\textless/em\textgreater kimiyya a cikin bincikensu. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table009}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> duk da haka, ana kuma amfani da harshen <em>spanish</em> sosai a <em>harkar</em> <em>sufuri</em> na jama&#8217;a da wasu <em>wurare.</em> </td> </tr><tr> <th> 100_data </th>
+  <td> duk da haka, <em>spanish</em> ne ma yadu amfani a jama'a <em>sufuri</em> da sauran <em>wurare.</em> </td> </tr><tr> <th> 150_data </th>
+  <td> duk da haka, <em>spanish</em> ne ma yadu amfani a jama'a <em>sufuri</em> da sauran <em>wurare.</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('010_latex')">Show/Hide LaTeX</button> <br/><pre id="010_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & duk da haka, ana kuma amfani da harshen \textlessem\textgreaterspanish\textless/em\textgreater sosai a \textlessem\textgreaterharkar\textless/em\textgreater \textlessem\textgreatersufuri\textless/em\textgreater na jama&#8217;a da wasu \textlessem\textgreaterwurare.\textless/em\textgreater \\
+100_data & duk da haka, \textlessem\textgreaterspanish\textless/em\textgreater ne ma yadu amfani a jama'a \textlessem\textgreatersufuri\textless/em\textgreater da sauran \textlessem\textgreaterwurare.\textless/em\textgreater \\
+150_data & duk da haka, \textlessem\textgreaterspanish\textless/em\textgreater ne ma yadu amfani a jama'a \textlessem\textgreatersufuri\textless/em\textgreater da sauran \textlessem\textgreaterwurare.\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table010}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> babban <em>alwatikan</em> a <em>giza</em> shine kawai &#599;ayan abubuwan <em>al'ajabi</em> bakwai da har yanzu suke tsaye a <em>yau.</em> </td> </tr><tr> <th> 100_data </th>
+  <td> babban pyramid a <em>giza</em> ne kawai daya daga cikin bakwai abubuwan <em>al'ajabi</em> wanda har yanzu yana tsaye a <em>yau.</em> </td> </tr><tr> <th> 150_data </th>
+  <td> babban pyramid a <em>giza</em> ne kawai daya daga cikin bakwai abubuwan <em>al'ajabi</em> da suke har yanzu tsaye a <em>yau.</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('011_latex')">Show/Hide LaTeX</button> <br/><pre id="011_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & babban \textlessem\textgreateralwatikan\textless/em\textgreater a \textlessem\textgreatergiza\textless/em\textgreater shine kawai &#599;ayan abubuwan \textlessem\textgreateral'ajabi\textless/em\textgreater bakwai da har yanzu suke tsaye a \textlessem\textgreateryau.\textless/em\textgreater \\
+100_data & babban pyramid a \textlessem\textgreatergiza\textless/em\textgreater ne kawai daya daga cikin bakwai abubuwan \textlessem\textgreateral'ajabi\textless/em\textgreater wanda har yanzu yana tsaye a \textlessem\textgreateryau.\textless/em\textgreater \\
+150_data & babban pyramid a \textlessem\textgreatergiza\textless/em\textgreater ne kawai daya daga cikin bakwai abubuwan \textlessem\textgreateral'ajabi\textless/em\textgreater da suke har yanzu tsaye a \textlessem\textgreateryau.\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table011}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> faransa ce kasa ta bakwai a cikin <em>tarayyar</em> turai da ke <em>fama</em> da wannan <em>cutar;</em> sun bi <em>austria,</em> jamus, <em>slovenia,</em> <em>bulgaria,</em> girka da <em>italiya.</em> </td> </tr><tr> <th> 100_data </th>
+  <td> faransa ne bakwai kasar a <em>tarayyar</em> turai don sha wahala da wannan budurwa; wadannan <em>austria,</em> jamus, <em>slovenia,</em> <em>bulgaria,</em> girka da <em>italiya.</em> </td> </tr><tr> <th> 150_data </th>
+  <td> faransa ita ce kasar ta bakwai a <em>tarayyar</em> turai don wahalar da wannan virus; wadannan <em>austria,</em> jamus, <em>slovenia,</em> <em>bulgaria,</em> girka da <em>italiya.</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('012_latex')">Show/Hide LaTeX</button> <br/><pre id="012_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & faransa ce kasa ta bakwai a cikin \textlessem\textgreatertarayyar\textless/em\textgreater turai da ke \textlessem\textgreaterfama\textless/em\textgreater da wannan \textlessem\textgreatercutar;\textless/em\textgreater sun bi \textlessem\textgreateraustria,\textless/em\textgreater jamus, \textlessem\textgreaterslovenia,\textless/em\textgreater \textlessem\textgreaterbulgaria,\textless/em\textgreater girka da \textlessem\textgreateritaliya.\textless/em\textgreater \\
+100_data & faransa ne bakwai kasar a \textlessem\textgreatertarayyar\textless/em\textgreater turai don sha wahala da wannan budurwa; wadannan \textlessem\textgreateraustria,\textless/em\textgreater jamus, \textlessem\textgreaterslovenia,\textless/em\textgreater \textlessem\textgreaterbulgaria,\textless/em\textgreater girka da \textlessem\textgreateritaliya.\textless/em\textgreater \\
+150_data & faransa ita ce kasar ta bakwai a \textlessem\textgreatertarayyar\textless/em\textgreater turai don wahalar da wannan virus; wadannan \textlessem\textgreateraustria,\textless/em\textgreater jamus, \textlessem\textgreaterslovenia,\textless/em\textgreater \textlessem\textgreaterbulgaria,\textless/em\textgreater girka da \textlessem\textgreateritaliya.\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table012}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> an <em>da&#599;e</em> kwarai da <em>sanin</em> cewa <em>matsalar</em> <em>&#409;wa&#409;walwa,</em> <em>firgicewa,</em> <em>gyambo</em> da <em>kumburi</em> daban-daban suna shafar <em>halayya</em> tare <em>janyo</em> <em>sauyi</em> a <em>aiyukan</em> <em>&#409;wa&#409;walwa.</em> </td> </tr><tr> <th> 100_data </th>
+  <td> an san lokaci mai tsawo wanda daban-daban na lalacewar kwakwalwa, raunin kwakwalwa, rauni, da tashin hankali yana shafar halayenmu da canje-canje a wasu ayyuka. </td> </tr><tr> <th> 150_data </th>
+  <td> an san shi na dogon lokaci cewa nau'ikan lalacewar kwakwalwa, rauni, raunuka, da raunuka, da halayen tasiri da haifar da canje-canje a wasu ayyukan kwakwalwa. </td> </tr>
+</table>
+ <br/><button onclick="showhide('013_latex')">Show/Hide LaTeX</button> <br/><pre id="013_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & an \textlessem\textgreaterda&#599;e\textless/em\textgreater kwarai da \textlessem\textgreatersanin\textless/em\textgreater cewa \textlessem\textgreatermatsalar\textless/em\textgreater \textlessem\textgreater&#409;wa&#409;walwa,\textless/em\textgreater \textlessem\textgreaterfirgicewa,\textless/em\textgreater \textlessem\textgreatergyambo\textless/em\textgreater da \textlessem\textgreaterkumburi\textless/em\textgreater daban-daban suna shafar \textlessem\textgreaterhalayya\textless/em\textgreater tare \textlessem\textgreaterjanyo\textless/em\textgreater \textlessem\textgreatersauyi\textless/em\textgreater a \textlessem\textgreateraiyukan\textless/em\textgreater \textlessem\textgreater&#409;wa&#409;walwa.\textless/em\textgreater \\
+100_data & an san lokaci mai tsawo wanda daban-daban na lalacewar kwakwalwa, raunin kwakwalwa, rauni, da tashin hankali yana shafar halayenmu da canje-canje a wasu ayyuka. \\
+150_data & an san shi na dogon lokaci cewa nau'ikan lalacewar kwakwalwa, rauni, raunuka, da raunuka, da halayen tasiri da haifar da canje-canje a wasu ayyukan kwakwalwa. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table013}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> an <em>tilasta</em> musu su biya haraji ga gwamnatin mulkin mallaka ta amurka don biyan wani babban <em>kaso</em> na <em>kudaden</em> da aka kashe da kuma <em>ku&#599;in-ruwa</em> na kan <em>basukan</em> da aka <em>fitar</em> da sunan gwamnatin <em>philippines</em> ta cikin <em>bankunan</em> <em>wall</em> <em>street.</em> </td> </tr><tr> <th> 100_data </th>
+  <td> an saka su biya haraji ga amurka m rajista zuwa defray wani babban &#595;angare na kuma sha'awar da sha'awar a kan bonds a cikin sunan philippine gwamnatin ta hanyar bango banki banki houses. </td> </tr><tr> <th> 150_data </th>
+  <td> an kafa su biya haraji zuwa yankin amurka colonial rajista don &#409;ayyade wani babban &#595;angare na kudi da sha'awar a kan kyaututtuka a cikin sunan philippine gwamnati ta hanyar bango street banki gidaje. </td> </tr>
+</table>
+ <br/><button onclick="showhide('014_latex')">Show/Hide LaTeX</button> <br/><pre id="014_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & an \textlessem\textgreatertilasta\textless/em\textgreater musu su biya haraji ga gwamnatin mulkin mallaka ta amurka don biyan wani babban \textlessem\textgreaterkaso\textless/em\textgreater na \textlessem\textgreaterkudaden\textless/em\textgreater da aka kashe da kuma \textlessem\textgreaterku&#599;in-ruwa\textless/em\textgreater na kan \textlessem\textgreaterbasukan\textless/em\textgreater da aka \textlessem\textgreaterfitar\textless/em\textgreater da sunan gwamnatin \textlessem\textgreaterphilippines\textless/em\textgreater ta cikin \textlessem\textgreaterbankunan\textless/em\textgreater \textlessem\textgreaterwall\textless/em\textgreater \textlessem\textgreaterstreet.\textless/em\textgreater \\
+100_data & an saka su biya haraji ga amurka m rajista zuwa defray wani babban &#595;angare na kuma sha'awar da sha'awar a kan bonds a cikin sunan philippine gwamnatin ta hanyar bango banki banki houses. \\
+150_data & an kafa su biya haraji zuwa yankin amurka colonial rajista don &#409;ayyade wani babban &#595;angare na kudi da sha'awar a kan kyaututtuka a cikin sunan philippine gwamnati ta hanyar bango street banki gidaje. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table014}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>chambers</em> ta yi <em>karan</em> <em>ubangiji</em> saboda <em>&#8220;ya&#599;uwar</em> <em>mutuwa</em> <em>ko&#8217;ina,</em> <em>halakawa</em> da <em>ta&#8217;addanci</em> akan miliyoyin mutanen <em>duniya.&#8221;</em> </td> </tr><tr> <th> 100_data </th>
+  <td> chammed ya tabbatar da allah ga "widesad mutuwa, wa'azi da kuma ta'addanci miliyoyin miliyoyin a kan miliyoyin duniya ta habitants." </td> </tr><tr> <th> 150_data </th>
+  <td> majami'u sun tabbatar da allah ga "mutanen hamada, halakar da ta'addanci na miliyoyin miliyoyin duniya na mazaunan duniya." </td> </tr>
+</table>
+ <br/><button onclick="showhide('015_latex')">Show/Hide LaTeX</button> <br/><pre id="015_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterchambers\textless/em\textgreater ta yi \textlessem\textgreaterkaran\textless/em\textgreater \textlessem\textgreaterubangiji\textless/em\textgreater saboda \textlessem\textgreater&#8220;ya&#599;uwar\textless/em\textgreater \textlessem\textgreatermutuwa\textless/em\textgreater \textlessem\textgreaterko&#8217;ina,\textless/em\textgreater \textlessem\textgreaterhalakawa\textless/em\textgreater da \textlessem\textgreaterta&#8217;addanci\textless/em\textgreater akan miliyoyin mutanen \textlessem\textgreaterduniya.&#8221;\textless/em\textgreater \\
+100_data & chammed ya tabbatar da allah ga "widesad mutuwa, wa'azi da kuma ta'addanci miliyoyin miliyoyin a kan miliyoyin duniya ta habitants." \\
+150_data & majami'u sun tabbatar da allah ga "mutanen hamada, halakar da ta'addanci na miliyoyin miliyoyin duniya na mazaunan duniya." \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table015}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>gugan</em> kayayyakin <em>sawa</em> masu <em>lema</em> su a iya <em>taimaka</em> masu <em>bushewa.</em> yawancin otal suna da dutsen guga da <em>katakon</em> guga <em>kaya</em> don <em>rance,</em> ko da ba wani a cikin <em>&#599;akin</em> ba. </td> </tr><tr> <th> 100_data </th>
+  <td> yawancin hotels da yawa suna da wani iron kwamitin jirgin sama don asara, ko da daya ba shi ne ba a cikin dakin. </td> </tr><tr> <th> 150_data </th>
+  <td> mutane da yawa hotels da ba&#409;in &#409;arfe da ba&#409;in &#409;arfe jirgi samuwa ga loan, ko da daya ba a yanzu ba a cikin dakin. </td> </tr>
+</table>
+ <br/><button onclick="showhide('016_latex')">Show/Hide LaTeX</button> <br/><pre id="016_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreatergugan\textless/em\textgreater kayayyakin \textlessem\textgreatersawa\textless/em\textgreater masu \textlessem\textgreaterlema\textless/em\textgreater su a iya \textlessem\textgreatertaimaka\textless/em\textgreater masu \textlessem\textgreaterbushewa.\textless/em\textgreater yawancin otal suna da dutsen guga da \textlessem\textgreaterkatakon\textless/em\textgreater guga \textlessem\textgreaterkaya\textless/em\textgreater don \textlessem\textgreaterrance,\textless/em\textgreater ko da ba wani a cikin \textlessem\textgreater&#599;akin\textless/em\textgreater ba. \\
+100_data & yawancin hotels da yawa suna da wani iron kwamitin jirgin sama don asara, ko da daya ba shi ne ba a cikin dakin. \\
+150_data & mutane da yawa hotels da ba&#409;in &#409;arfe da ba&#409;in &#409;arfe jirgi samuwa ga loan, ko da daya ba a yanzu ba a cikin dakin. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table016}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> ana iya <em>tale</em> shi ya zama <em>siririyar</em> <em>waya,</em> wadda ake iya <em>nadewa</em> ko a <em>kulle,</em> kuma ana iya <em>dunkule</em> ta ko <em>nada</em> ta zuwa <em>falle</em> <em>falle.</em> </td> </tr><tr> <th> 100_data </th>
+  <td> za a iya yin amfani da shi a cikin bakin ciki wire, wanda za a iya karkatar da kuma sake kunnawa. </td> </tr><tr> <th> 150_data </th>
+  <td> yana za a iya hammered ko birgima a cikin takardar. </td> </tr>
+</table>
+ <br/><button onclick="showhide('017_latex')">Show/Hide LaTeX</button> <br/><pre id="017_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & ana iya \textlessem\textgreatertale\textless/em\textgreater shi ya zama \textlessem\textgreatersiririyar\textless/em\textgreater \textlessem\textgreaterwaya,\textless/em\textgreater wadda ake iya \textlessem\textgreaternadewa\textless/em\textgreater ko a \textlessem\textgreaterkulle,\textless/em\textgreater kuma ana iya \textlessem\textgreaterdunkule\textless/em\textgreater ta ko \textlessem\textgreaternada\textless/em\textgreater ta zuwa \textlessem\textgreaterfalle\textless/em\textgreater \textlessem\textgreaterfalle.\textless/em\textgreater \\
+100_data & za a iya yin amfani da shi a cikin bakin ciki wire, wanda za a iya karkatar da kuma sake kunnawa. \\
+150_data & yana za a iya hammered ko birgima a cikin takardar. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table017}
+\end{table}</pre><a name="bucket2"/><h3> Examples for Bucket 2 </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> masu daukar hoto daga baya sun maye gurbin wata tsohuwa saboda tana <em>bukatar</em> dakin wankan. an bindige mendoza. </td> </tr><tr> <th> 100_data </th>
+  <td> the photographers daga baya ya dauki wuri na wani shekara lady kamar yadda ta <em>bukatar</em> da ake bukata lavatory. </td> </tr><tr> <th> 150_data </th>
+  <td> the photographers daga baya ya dauki wurin wani shekaru lady kamar yadda ta bukata da lavatory. </td> </tr>
+</table>
+ <br/><button onclick="showhide('018_latex')">Show/Hide LaTeX</button> <br/><pre id="018_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & masu daukar hoto daga baya sun maye gurbin wata tsohuwa saboda tana \textlessem\textgreaterbukatar\textless/em\textgreater dakin wankan. an bindige mendoza. \\
+100_data & the photographers daga baya ya dauki wuri na wani shekara lady kamar yadda ta \textlessem\textgreaterbukatar\textless/em\textgreater da ake bukata lavatory. \\
+150_data & the photographers daga baya ya dauki wurin wani shekaru lady kamar yadda ta bukata da lavatory. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table018}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> irin wannan manajan yana da wahalar yanke <em>shawara</em> mara kyau, aiwatar da ladabtarwa, kimanta aikin aiki, sanya nauyi, da &#599;aukar mutane da alhaki. </td> </tr><tr> <th> 100_data </th>
+  <td> wannan irin manaja yana da wahala yin m yanke <em>shawara</em> yanke shawara, yin tarbiyya, yi kimantawa, sanya hannu amsawa, kuma rike mutane asusun. </td> </tr><tr> <th> 150_data </th>
+  <td> wannan irin manajan yana da wahala yin m yanke shawara, yin disciplinary mataki, yi kimantawa, asning amsa, da rike mutane accountable. </td> </tr>
+</table>
+ <br/><button onclick="showhide('019_latex')">Show/Hide LaTeX</button> <br/><pre id="019_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & irin wannan manajan yana da wahalar yanke \textlessem\textgreatershawara\textless/em\textgreater mara kyau, aiwatar da ladabtarwa, kimanta aikin aiki, sanya nauyi, da &#599;aukar mutane da alhaki. \\
+100_data & wannan irin manaja yana da wahala yin m yanke \textlessem\textgreatershawara\textless/em\textgreater yanke shawara, yin tarbiyya, yi kimantawa, sanya hannu amsawa, kuma rike mutane asusun. \\
+150_data & wannan irin manajan yana da wahala yin m yanke shawara, yin disciplinary mataki, yi kimantawa, asning amsa, da rike mutane accountable. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table019}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> nau&#8217;in cutar murar <em>tsuntsaye</em> mai hadari ta h5n1, an tabbatar ita ce ta kama agwagwar daji wadda aka samu ranar lahadi a wani surkuki kusa da garin lyon da ke gabashin faransa. </td> </tr><tr> <th> 100_data </th>
+  <td> an tabbatar da ra'ayoyin tsuntsu ga mutane, h51, an tabbatar da kamuwa da cutar daji matattu duck, wanda aka samu a ranar alhamis, a marshland kusa da lyon a gabas na faransa. </td> </tr><tr> <th> 150_data </th>
+  <td> madaidaiciyar <em>tsuntsaye</em> a lethal ga mutane, h5n1, an tabbatar da cewa an kamu da cutar matattu daji duck, a ranar litinin, a marshland kusa da lyon a gabas na faransa. </td> </tr>
+</table>
+ <br/><button onclick="showhide('020_latex')">Show/Hide LaTeX</button> <br/><pre id="020_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & nau&#8217;in cutar murar \textlessem\textgreatertsuntsaye\textless/em\textgreater mai hadari ta h5n1, an tabbatar ita ce ta kama agwagwar daji wadda aka samu ranar lahadi a wani surkuki kusa da garin lyon da ke gabashin faransa. \\
+100_data & an tabbatar da ra'ayoyin tsuntsu ga mutane, h51, an tabbatar da kamuwa da cutar daji matattu duck, wanda aka samu a ranar alhamis, a marshland kusa da lyon a gabas na faransa. \\
+150_data & madaidaiciyar \textlessem\textgreatertsuntsaye\textless/em\textgreater a lethal ga mutane, h5n1, an tabbatar da cewa an kamu da cutar matattu daji duck, a ranar litinin, a marshland kusa da lyon a gabas na faransa. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table020}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> cikin wadanda aka amince da su akwai ra&#8217;ayin/fahimtar aristotle kan dukkan batutuwan kimiyya, ciki har da ilimin halayyar dan <em>adam.</em> </td> </tr><tr> <th> 100_data </th>
+  <td> an yarda da aristotle's ra'ayoyi a kan dukkan al'amurran kimiyya, ciki har da psychology. </td> </tr><tr> <th> 150_data </th>
+  <td> an kar&#595;i ra'ayoyin aristotle's akan dukkan al'amuran kimiyya, gami da ilimin halayyar dan <em>adam.</em> </td> </tr>
+</table>
+ <br/><button onclick="showhide('021_latex')">Show/Hide LaTeX</button> <br/><pre id="021_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & cikin wadanda aka amince da su akwai ra&#8217;ayin/fahimtar aristotle kan dukkan batutuwan kimiyya, ciki har da ilimin halayyar dan \textlessem\textgreateradam.\textless/em\textgreater \\
+100_data & an yarda da aristotle's ra'ayoyi a kan dukkan al'amurran kimiyya, ciki har da psychology. \\
+150_data & an kar&#595;i ra'ayoyin aristotle's akan dukkan al'amuran kimiyya, gami da ilimin halayyar dan \textlessem\textgreateradam.\textless/em\textgreater \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table021}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> babban jami'in shirin rufe jirgin nasa, n. wayne hale jr. ya ce kumburin ya fadi &#8220;bayan lokacin da <em>muke</em> damuwa.&#8221; </td> </tr><tr> <th> 100_data </th>
+  <td> shugaban kasa muhammadu buhari ya bayyana hakan ne a ranar laraba. </td> </tr><tr> <th> 150_data </th>
+  <td> shugaban shirin nasa, n. wayne hale jr. ya ce kumfa ya auku "bayan lokacin da <em>muke</em> damuwa game da fita." </td> </tr>
+</table>
+ <br/><button onclick="showhide('022_latex')">Show/Hide LaTeX</button> <br/><pre id="022_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & babban jami'in shirin rufe jirgin nasa, n. wayne hale jr. ya ce kumburin ya fadi &#8220;bayan lokacin da \textlessem\textgreatermuke\textless/em\textgreater damuwa.&#8221; \\
+100_data & shugaban kasa muhammadu buhari ya bayyana hakan ne a ranar laraba. \\
+150_data & shugaban shirin nasa, n. wayne hale jr. ya ce kumfa ya auku "bayan lokacin da \textlessem\textgreatermuke\textless/em\textgreater damuwa game da fita." \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table022}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>faransa</em> ce kasa ta <em>bakwai</em> a cikin tarayyar turai da ke fama da wannan cutar; sun bi austria, <em>jamus,</em> slovenia, bulgaria, <em>girka</em> da italiya. </td> </tr><tr> <th> 100_data </th>
+  <td> <em>faransa</em> ne <em>bakwai</em> kasar a tarayyar turai don sha wahala da wannan budurwa; wadannan austria, <em>jamus,</em> slovenia, bulgaria, <em>girka</em> da italiya. </td> </tr><tr> <th> 150_data </th>
+  <td> <em>faransa</em> ita ce kasar ta <em>bakwai</em> a tarayyar turai don wahalar da wannan virus; wadannan austria, <em>jamus,</em> slovenia, bulgaria, <em>girka</em> da italiya. </td> </tr>
+</table>
+ <br/><button onclick="showhide('023_latex')">Show/Hide LaTeX</button> <br/><pre id="023_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterfaransa\textless/em\textgreater ce kasa ta \textlessem\textgreaterbakwai\textless/em\textgreater a cikin tarayyar turai da ke fama da wannan cutar; sun bi austria, \textlessem\textgreaterjamus,\textless/em\textgreater slovenia, bulgaria, \textlessem\textgreatergirka\textless/em\textgreater da italiya. \\
+100_data & \textlessem\textgreaterfaransa\textless/em\textgreater ne \textlessem\textgreaterbakwai\textless/em\textgreater kasar a tarayyar turai don sha wahala da wannan budurwa; wadannan austria, \textlessem\textgreaterjamus,\textless/em\textgreater slovenia, bulgaria, \textlessem\textgreatergirka\textless/em\textgreater da italiya. \\
+150_data & \textlessem\textgreaterfaransa\textless/em\textgreater ita ce kasar ta \textlessem\textgreaterbakwai\textless/em\textgreater a tarayyar turai don wahalar da wannan virus; wadannan austria, \textlessem\textgreaterjamus,\textless/em\textgreater slovenia, bulgaria, \textlessem\textgreatergirka\textless/em\textgreater da italiya. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table023}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> ruwan gishiri na kaduna ba ya <em>rayuwa</em> a cikin <em>teku,</em> asalin wurin zaman su shine a cikin kogin estuaries a arewa daga rockhampton. </td> </tr><tr> <th> 100_data </th>
+  <td> saltruwa na giciye ba su <em>rayuwa</em> a <em>teku,</em> yankinsu na farko na farko yana cikin kogin kogin kogin ruwa daga rockhampton. </td> </tr><tr> <th> 150_data </th>
+  <td> saltruwa crocodiles ba rayayye <em>rayuwa</em> a <em>teku,</em> su primary habites ne a kogin esturies arewa daga rockhampton. </td> </tr>
+</table>
+ <br/><button onclick="showhide('024_latex')">Show/Hide LaTeX</button> <br/><pre id="024_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & ruwan gishiri na kaduna ba ya \textlessem\textgreaterrayuwa\textless/em\textgreater a cikin \textlessem\textgreaterteku,\textless/em\textgreater asalin wurin zaman su shine a cikin kogin estuaries a arewa daga rockhampton. \\
+100_data & saltruwa na giciye ba su \textlessem\textgreaterrayuwa\textless/em\textgreater a \textlessem\textgreaterteku,\textless/em\textgreater yankinsu na farko na farko yana cikin kogin kogin kogin ruwa daga rockhampton. \\
+150_data & saltruwa crocodiles ba rayayye \textlessem\textgreaterrayuwa\textless/em\textgreater a \textlessem\textgreaterteku,\textless/em\textgreater su primary habites ne a kogin esturies arewa daga rockhampton. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table024}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> bayan haka, a &#409;arshe jagoran shi yake da <em>alhakin</em> <em>nasara</em> da rashin nasarar kungiyar. </td> </tr><tr> <th> 100_data </th>
+  <td> bayan haka, shugaban yana da <em>alhakin</em> <em>nasara</em> da gazawar tawagar. </td> </tr><tr> <th> 150_data </th>
+  <td> bayan haka, shugaban yana da <em>alhakin</em> <em>nasara</em> da gazawar tawagar. </td> </tr>
+</table>
+ <br/><button onclick="showhide('025_latex')">Show/Hide LaTeX</button> <br/><pre id="025_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & bayan haka, a &#409;arshe jagoran shi yake da \textlessem\textgreateralhakin\textless/em\textgreater \textlessem\textgreaternasara\textless/em\textgreater da rashin nasarar kungiyar. \\
+100_data & bayan haka, shugaban yana da \textlessem\textgreateralhakin\textless/em\textgreater \textlessem\textgreaternasara\textless/em\textgreater da gazawar tawagar. \\
+150_data & bayan haka, shugaban yana da \textlessem\textgreateralhakin\textless/em\textgreater \textlessem\textgreaternasara\textless/em\textgreater da gazawar tawagar. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table025}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> hakanan bayan juyin <em>halin</em> an bude ayyuka ga duk maza masu neman aiki inda hakan ya bada dama ga masu buri da kokari su sami cigaba. </td> </tr><tr> <th> 100_data </th>
+  <td> har ila yau, bayan juyin juya <em>halin</em> juya zabin da aka bude ga dukan namiji aikace-aikace kyale mafi m da nasara a nasara. </td> </tr><tr> <th> 150_data </th>
+  <td> har ila yau, bayan da juyin juyin <em>halin</em> da aka bude wa dukan namiji aikace-aikace kyale mafi m da nasara nasara. </td> </tr>
+</table>
+ <br/><button onclick="showhide('026_latex')">Show/Hide LaTeX</button> <br/><pre id="026_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & hakanan bayan juyin \textlessem\textgreaterhalin\textless/em\textgreater an bude ayyuka ga duk maza masu neman aiki inda hakan ya bada dama ga masu buri da kokari su sami cigaba. \\
+100_data & har ila yau, bayan juyin juya \textlessem\textgreaterhalin\textless/em\textgreater juya zabin da aka bude ga dukan namiji aikace-aikace kyale mafi m da nasara a nasara. \\
+150_data & har ila yau, bayan da juyin juyin \textlessem\textgreaterhalin\textless/em\textgreater da aka bude wa dukan namiji aikace-aikace kyale mafi m da nasara nasara. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table026}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> karafan gami ne na &#409;arafa biyu ko fiye da haka. kar a manta cewa akwai <em>abubuwa</em> da yawa a kan jadawali na lokaci-lokaci. </td> </tr><tr> <th> 100_data </th>
+  <td> gami ne m cakuda biyu ko fiye da karafa. kada ka manta cewa akwai <em>abubuwa</em> da yawa a kan lokacin lokaci. </td> </tr><tr> <th> 150_data </th>
+  <td> kada ka manta cewa akwai <em>abubuwa</em> da yawa a kan lokaci-lokaci. </td> </tr>
+</table>
+ <br/><button onclick="showhide('027_latex')">Show/Hide LaTeX</button> <br/><pre id="027_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & karafan gami ne na &#409;arafa biyu ko fiye da haka. kar a manta cewa akwai \textlessem\textgreaterabubuwa\textless/em\textgreater da yawa a kan jadawali na lokaci-lokaci. \\
+100_data & gami ne m cakuda biyu ko fiye da karafa. kada ka manta cewa akwai \textlessem\textgreaterabubuwa\textless/em\textgreater da yawa a kan lokacin lokaci. \\
+150_data & kada ka manta cewa akwai \textlessem\textgreaterabubuwa\textless/em\textgreater da yawa a kan lokaci-lokaci. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table027}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> kamar da abun kuna talabijin daga <em>nesa</em> <em>wato</em> remote, mai <em>sarrafawa</em> yana amfani da <em>na&#8217;urorin</em> sunsuna guda biyu da aka sanya kusa da talabijin &#599;in mai amfani don <em>daidaita</em> <em>matsayinta</em> a cikin sarari mai fuska <em>uku.</em> </td> </tr><tr> <th> 100_data </th>
+  <td> sarrafa talabijin na talabijin na talabijin, mai kula yana amfani da fasinjoji guda biyu sanya shi a kusa da talabijin na mai amfani. </td> </tr><tr> <th> 150_data </th>
+  <td> ci gaba da wani talabijin remote, da mai kula yana amfani da biyu sensors sanya kusa da mai amfani da talabijin zuwa triangulate da matsayi a uku-girma sarari. </td> </tr>
+</table>
+ <br/><button onclick="showhide('028_latex')">Show/Hide LaTeX</button> <br/><pre id="028_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & kamar da abun kuna talabijin daga \textlessem\textgreaternesa\textless/em\textgreater \textlessem\textgreaterwato\textless/em\textgreater remote, mai \textlessem\textgreatersarrafawa\textless/em\textgreater yana amfani da \textlessem\textgreaterna&#8217;urorin\textless/em\textgreater sunsuna guda biyu da aka sanya kusa da talabijin &#599;in mai amfani don \textlessem\textgreaterdaidaita\textless/em\textgreater \textlessem\textgreatermatsayinta\textless/em\textgreater a cikin sarari mai fuska \textlessem\textgreateruku.\textless/em\textgreater \\
+100_data & sarrafa talabijin na talabijin na talabijin, mai kula yana amfani da fasinjoji guda biyu sanya shi a kusa da talabijin na mai amfani. \\
+150_data & ci gaba da wani talabijin remote, da mai kula yana amfani da biyu sensors sanya kusa da mai amfani da talabijin zuwa triangulate da matsayi a uku-girma sarari. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table028}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> a lokacin gabatar da babban bayani na ranar alhamis a <em>nunin</em> wasan tokyo, shugaban <em>nintendo</em> satoru iwata ya kaddamar da tsarin <em>sarrafawa</em> na sabuwar <em>na&#8217;urar</em> <em>nintendo</em> re volution. </td> </tr><tr> <th> 100_data </th>
+  <td> gwamnan jihar kebbi, sanata abubakar atiku bagudu ya baiwa rundunar... </td> </tr><tr> <th> 150_data </th>
+  <td> shugaban kasa muhammadu buhari ya bayyana cewa, shugaban kasa muhammadu buhari ya bayyana hakan ne a ranar alhamis din da ya gabata. </td> </tr>
+</table>
+ <br/><button onclick="showhide('029_latex')">Show/Hide LaTeX</button> <br/><pre id="029_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & a lokacin gabatar da babban bayani na ranar alhamis a \textlessem\textgreaternunin\textless/em\textgreater wasan tokyo, shugaban \textlessem\textgreaternintendo\textless/em\textgreater satoru iwata ya kaddamar da tsarin \textlessem\textgreatersarrafawa\textless/em\textgreater na sabuwar \textlessem\textgreaterna&#8217;urar\textless/em\textgreater \textlessem\textgreaternintendo\textless/em\textgreater re volution. \\
+100_data & gwamnan jihar kebbi, sanata abubakar atiku bagudu ya baiwa rundunar... \\
+150_data & shugaban kasa muhammadu buhari ya bayyana cewa, shugaban kasa muhammadu buhari ya bayyana hakan ne a ranar alhamis din da ya gabata. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table029}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> gugan <em>kayayyakin</em> sawa masu lema su a iya taimaka masu bushewa. yawancin <em>otal</em> suna da <em>dutsen</em> <em>guga</em> da katakon <em>guga</em> kaya don rance, ko da ba wani a cikin &#599;akin ba. </td> </tr><tr> <th> 100_data </th>
+  <td> yawancin hotels da yawa suna da wani iron kwamitin jirgin sama don asara, ko da daya ba shi ne ba a cikin dakin. </td> </tr><tr> <th> 150_data </th>
+  <td> mutane da yawa hotels da ba&#409;in &#409;arfe da ba&#409;in &#409;arfe jirgi samuwa ga loan, ko da daya ba a yanzu ba a cikin dakin. </td> </tr>
+</table>
+ <br/><button onclick="showhide('030_latex')">Show/Hide LaTeX</button> <br/><pre id="030_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & gugan \textlessem\textgreaterkayayyakin\textless/em\textgreater sawa masu lema su a iya taimaka masu bushewa. yawancin \textlessem\textgreaterotal\textless/em\textgreater suna da \textlessem\textgreaterdutsen\textless/em\textgreater \textlessem\textgreaterguga\textless/em\textgreater da katakon \textlessem\textgreaterguga\textless/em\textgreater kaya don rance, ko da ba wani a cikin &#599;akin ba. \\
+100_data & yawancin hotels da yawa suna da wani iron kwamitin jirgin sama don asara, ko da daya ba shi ne ba a cikin dakin. \\
+150_data & mutane da yawa hotels da ba&#409;in &#409;arfe da ba&#409;in &#409;arfe jirgi samuwa ga loan, ko da daya ba a yanzu ba a cikin dakin. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table030}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> a watan da ya gabata ne wani kwamiti na shugaban kasa ya ba da <em>shawarar</em> murabus <em>din</em> <em>cep</em> tun gabani a matsayin bangare na kunshin daukar matakan ciyar da kasar gaba zuwa <em>sabon</em> zabe. </td> </tr><tr> <th> 100_data </th>
+  <td> a watan satumban shugaban kasa muhammadu buhari ya bayyana hakan a lokacin da yake zantawa da shugaban kasa muhammadu buhari a matsayin shugaban kasa muhammadu buhari. </td> </tr><tr> <th> 150_data </th>
+  <td> shugaban kasa muhammadu buhari ya bayyana hakan a matsayin wani bangare na mataimakin shugaban kasa muhammadu buhari a matsayin mataimakin shugaban kasa muhammadu buhari. </td> </tr>
+</table>
+ <br/><button onclick="showhide('031_latex')">Show/Hide LaTeX</button> <br/><pre id="031_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & a watan da ya gabata ne wani kwamiti na shugaban kasa ya ba da \textlessem\textgreatershawarar\textless/em\textgreater murabus \textlessem\textgreaterdin\textless/em\textgreater \textlessem\textgreatercep\textless/em\textgreater tun gabani a matsayin bangare na kunshin daukar matakan ciyar da kasar gaba zuwa \textlessem\textgreatersabon\textless/em\textgreater zabe. \\
+100_data & a watan satumban shugaban kasa muhammadu buhari ya bayyana hakan a lokacin da yake zantawa da shugaban kasa muhammadu buhari a matsayin shugaban kasa muhammadu buhari. \\
+150_data & shugaban kasa muhammadu buhari ya bayyana hakan a matsayin wani bangare na mataimakin shugaban kasa muhammadu buhari a matsayin mataimakin shugaban kasa muhammadu buhari. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table031}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> babu abin da za a iya gani face kyakkyawan <em>sararin</em> <em>samaniya</em> da tsaunuka masu yawa da ke kewayen. <em>baka</em> iya ji ko ganin <em>wadannan</em> daga cikin kogon. </td> </tr><tr> <th> 100_data </th>
+  <td> babu wani abu da za a iya gani da sauran bayyanannu, kyau sama sama da kuma da yawa kewaye da duwatsu. sosai kadan wannan duniya za a iya gani ko ji daga cikin kaisar. </td> </tr><tr> <th> 150_data </th>
+  <td> babu wani abu da za a iya gani daga bayyanannu, kyau sama da kuma da yawa kewaye duw&#227;tsu. sosai kadan wannan duniya za a iya gani ko ji daga cikin cave. </td> </tr>
+</table>
+ <br/><button onclick="showhide('032_latex')">Show/Hide LaTeX</button> <br/><pre id="032_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & babu abin da za a iya gani face kyakkyawan \textlessem\textgreatersararin\textless/em\textgreater \textlessem\textgreatersamaniya\textless/em\textgreater da tsaunuka masu yawa da ke kewayen. \textlessem\textgreaterbaka\textless/em\textgreater iya ji ko ganin \textlessem\textgreaterwadannan\textless/em\textgreater daga cikin kogon. \\
+100_data & babu wani abu da za a iya gani da sauran bayyanannu, kyau sama sama da kuma da yawa kewaye da duwatsu. sosai kadan wannan duniya za a iya gani ko ji daga cikin kaisar. \\
+150_data & babu wani abu da za a iya gani daga bayyanannu, kyau sama da kuma da yawa kewaye duw&#227;tsu. sosai kadan wannan duniya za a iya gani ko ji daga cikin cave. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table032}
+\end{table}</pre><a name="bucket3"/><h3> Examples for Bucket 3 </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> d k arya, mataimakin sufeto janar ya <em>ce,</em> &#8220;mun kama mutane <em>biyar</em> da suka yi wa yar kasar switzerland fyade kuma an gano wayarta ta hannu da kwamfutar taa </td> </tr><tr> <th> 100_data </th>
+  <td> shugaban kasa muhammadu buhari ya bayyana hakan ne a lokacin da yake jawabi wajen yaki da cutar coronavirus/covid-19 a najeriya. </td> </tr><tr> <th> 150_data </th>
+  <td> mataimakin shugaban janar d d arya ya <em>ce,</em> "mun kama mutane <em>biyar</em> da suka rage matar swiss da kuma sake rufe ta hannu da kwamfutar tafi-da-gidanka". </td> </tr>
+</table>
+ <br/><button onclick="showhide('033_latex')">Show/Hide LaTeX</button> <br/><pre id="033_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & d k arya, mataimakin sufeto janar ya \textlessem\textgreaterce,\textless/em\textgreater &#8220;mun kama mutane \textlessem\textgreaterbiyar\textless/em\textgreater da suka yi wa yar kasar switzerland fyade kuma an gano wayarta ta hannu da kwamfutar taa \\
+100_data & shugaban kasa muhammadu buhari ya bayyana hakan ne a lokacin da yake jawabi wajen yaki da cutar coronavirus/covid-19 a najeriya. \\
+150_data & mataimakin shugaban janar d d arya ya \textlessem\textgreaterce,\textless/em\textgreater "mun kama mutane \textlessem\textgreaterbiyar\textless/em\textgreater da suka rage matar swiss da kuma sake rufe ta hannu da kwamfutar tafi-da-gidanka". \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table033}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> a yau yawancin s&#225;mi suna yin sana'o'in zamani. <em>yawon</em> buda ido muhimmin kudin shiga ne a cikin s&#225;mi, yankin na s&#225;mi. </td> </tr><tr> <th> 100_data </th>
+  <td> yau da yawa slomi aiki a zamani trades. <em>yawon</em> shakatawa ne mai muhimmanci samun kudin shiga cikin snopmi, da snomi yankin. </td> </tr><tr> <th> 150_data </th>
+  <td> yau s&#225;mi aiki a zamani cinikayya. tourism ne mai muhimmanci samun kudin shiga a s&#225;pmi, da s&#225;mi yankin. </td> </tr>
+</table>
+ <br/><button onclick="showhide('034_latex')">Show/Hide LaTeX</button> <br/><pre id="034_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & a yau yawancin s&#225;mi suna yin sana'o'in zamani. \textlessem\textgreateryawon\textless/em\textgreater buda ido muhimmin kudin shiga ne a cikin s&#225;mi, yankin na s&#225;mi. \\
+100_data & yau da yawa slomi aiki a zamani trades. \textlessem\textgreateryawon\textless/em\textgreater shakatawa ne mai muhimmanci samun kudin shiga cikin snopmi, da snomi yankin. \\
+150_data & yau s&#225;mi aiki a zamani cinikayya. tourism ne mai muhimmanci samun kudin shiga a s&#225;pmi, da s&#225;mi yankin. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table034}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> wasu jiragen ruwa su kan sanya berlin, jamus a cikin littafin bayanin. kamar yadda ka ke <em>gani</em> daga taswirar da ke sama babu inda berlin ta yi kusa da teku kuma ba a ha&#599;a ziyarar birnin ba a farashin jirgi. </td> </tr><tr> <th> 100_data </th>
+  <td> kamar yadda za ka iya ganin daga taswirar berlin ba inda kusa da teku da ziyarci birnin ba a cikin farashin cruise. </td> </tr><tr> <th> 150_data </th>
+  <td> kamar yadda ka <em>gani</em> daga taswirar sama berlin ne babu inda kusa da teku da kuma ziyarci birnin ba a hada a farashin da cruise. </td> </tr>
+</table>
+ <br/><button onclick="showhide('035_latex')">Show/Hide LaTeX</button> <br/><pre id="035_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & wasu jiragen ruwa su kan sanya berlin, jamus a cikin littafin bayanin. kamar yadda ka ke \textlessem\textgreatergani\textless/em\textgreater daga taswirar da ke sama babu inda berlin ta yi kusa da teku kuma ba a ha&#599;a ziyarar birnin ba a farashin jirgi. \\
+100_data & kamar yadda za ka iya ganin daga taswirar berlin ba inda kusa da teku da ziyarci birnin ba a cikin farashin cruise. \\
+150_data & kamar yadda ka \textlessem\textgreatergani\textless/em\textgreater daga taswirar sama berlin ne babu inda kusa da teku da kuma ziyarci birnin ba a hada a farashin da cruise. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table035}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> an da&#599;e kwarai da sanin cewa matsalar &#409;wa&#409;walwa, firgicewa, gyambo da kumburi <em>daban-daban</em> suna shafar halayya tare janyo sauyi a aiyukan &#409;wa&#409;walwa. </td> </tr><tr> <th> 100_data </th>
+  <td> an san lokaci mai tsawo wanda <em>daban-daban</em> na lalacewar kwakwalwa, raunin kwakwalwa, rauni, da tashin hankali yana shafar halayenmu da canje-canje a wasu ayyuka. </td> </tr><tr> <th> 150_data </th>
+  <td> an san shi na dogon lokaci cewa nau'ikan lalacewar kwakwalwa, rauni, raunuka, da raunuka, da halayen tasiri da haifar da canje-canje a wasu ayyukan kwakwalwa. </td> </tr>
+</table>
+ <br/><button onclick="showhide('036_latex')">Show/Hide LaTeX</button> <br/><pre id="036_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & an da&#599;e kwarai da sanin cewa matsalar &#409;wa&#409;walwa, firgicewa, gyambo da kumburi \textlessem\textgreaterdaban-daban\textless/em\textgreater suna shafar halayya tare janyo sauyi a aiyukan &#409;wa&#409;walwa. \\
+100_data & an san lokaci mai tsawo wanda \textlessem\textgreaterdaban-daban\textless/em\textgreater na lalacewar kwakwalwa, raunin kwakwalwa, rauni, da tashin hankali yana shafar halayenmu da canje-canje a wasu ayyuka. \\
+150_data & an san shi na dogon lokaci cewa nau'ikan lalacewar kwakwalwa, rauni, raunuka, da raunuka, da halayen tasiri da haifar da canje-canje a wasu ayyukan kwakwalwa. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table036}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> da <em>dama</em> cikin mazauna bishkek sun zargi masu zanga-zangar da suka fito daga kudanci da halayyar rashin mutunta doka. </td> </tr><tr> <th> 100_data </th>
+  <td> da yawa bishkek mazauna blamed masu kariya daga kudancin kudancin doka. </td> </tr><tr> <th> 150_data </th>
+  <td> da <em>dama</em> bishkek mazauna masu launin kariya daga kudu don lawlessness. </td> </tr>
+</table>
+ <br/><button onclick="showhide('037_latex')">Show/Hide LaTeX</button> <br/><pre id="037_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & da \textlessem\textgreaterdama\textless/em\textgreater cikin mazauna bishkek sun zargi masu zanga-zangar da suka fito daga kudanci da halayyar rashin mutunta doka. \\
+100_data & da yawa bishkek mazauna blamed masu kariya daga kudancin kudancin doka. \\
+150_data & da \textlessem\textgreaterdama\textless/em\textgreater bishkek mazauna masu launin kariya daga kudu don lawlessness. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table037}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> wani hadaddiyar giyar, zmapp, da <em>farko</em> ya nuna al&#409;awari a fagen, amma nazarin yau da kullun ya nuna cewa ba shi da fa'ida fiye da yadda ake neman <em>hana</em> mutuwa. </td> </tr><tr> <th> 100_data </th>
+  <td> daya antibody cocktail, zmapp, da <em>farko</em> ya nuna alkawari a cikin filin, amma formal nazarin nuna shi ya kasa amfana fiye da neman <em>hana</em> mutuwa. </td> </tr><tr> <th> 150_data </th>
+  <td> daya antibody cocktail, zmapp, da <em>farko</em> nuna alkawari a filin, amma m karatu nuna shi ya kasa amfana fiye da nemi a <em>hana</em> mutuwa. </td> </tr>
+</table>
+ <br/><button onclick="showhide('038_latex')">Show/Hide LaTeX</button> <br/><pre id="038_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & wani hadaddiyar giyar, zmapp, da \textlessem\textgreaterfarko\textless/em\textgreater ya nuna al&#409;awari a fagen, amma nazarin yau da kullun ya nuna cewa ba shi da fa'ida fiye da yadda ake neman \textlessem\textgreaterhana\textless/em\textgreater mutuwa. \\
+100_data & daya antibody cocktail, zmapp, da \textlessem\textgreaterfarko\textless/em\textgreater ya nuna alkawari a cikin filin, amma formal nazarin nuna shi ya kasa amfana fiye da neman \textlessem\textgreaterhana\textless/em\textgreater mutuwa. \\
+150_data & daya antibody cocktail, zmapp, da \textlessem\textgreaterfarko\textless/em\textgreater nuna alkawari a filin, amma m karatu nuna shi ya kasa amfana fiye da nemi a \textlessem\textgreaterhana\textless/em\textgreater mutuwa. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table038}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>mutanen</em> da suka halarta sun yi yawa yadda ba zai yiwu <em>kowa</em> ya iya samun shiga wajen jana&#8217;izar ba da ke dandalin peter. </td> </tr><tr> <th> 100_data </th>
+  <td> yawan <em>mutanen</em> da suka gabata ya kasance babban cewa ba zai yiwu ga <em>kowa</em> don samun damar samun damar yin amfani da aikin a st. peter's square. </td> </tr><tr> <th> 150_data </th>
+  <td> yawan <em>mutanen</em> da suka gabata ya kasance babban cewa ba zai yiwu ga <em>kowa</em> ya sami damar samun damar yin amfani da mai aiki a st. peter's square. </td> </tr>
+</table>
+ <br/><button onclick="showhide('039_latex')">Show/Hide LaTeX</button> <br/><pre id="039_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreatermutanen\textless/em\textgreater da suka halarta sun yi yawa yadda ba zai yiwu \textlessem\textgreaterkowa\textless/em\textgreater ya iya samun shiga wajen jana&#8217;izar ba da ke dandalin peter. \\
+100_data & yawan \textlessem\textgreatermutanen\textless/em\textgreater da suka gabata ya kasance babban cewa ba zai yiwu ga \textlessem\textgreaterkowa\textless/em\textgreater don samun damar samun damar yin amfani da aikin a st. peter's square. \\
+150_data & yawan \textlessem\textgreatermutanen\textless/em\textgreater da suka gabata ya kasance babban cewa ba zai yiwu ga \textlessem\textgreaterkowa\textless/em\textgreater ya sami damar samun damar yin amfani da mai aiki a st. peter's square. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table039}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> kawai abin da na ke ce wa mutane shine ku <em>bi</em> da mu yadda muke <em>bi</em> da ku. </td> </tr><tr> <th> 100_data </th>
+  <td> duk ina gaya mutane ne ka <em>bi</em> mu hanyar da muke <em>bi</em> da ku. </td> </tr><tr> <th> 150_data </th>
+  <td> all ina gaya wa mutane ne ka <em>bi</em> mu da hanyar da muka <em>bi</em> ka. </td> </tr>
+</table>
+ <br/><button onclick="showhide('040_latex')">Show/Hide LaTeX</button> <br/><pre id="040_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & kawai abin da na ke ce wa mutane shine ku \textlessem\textgreaterbi\textless/em\textgreater da mu yadda muke \textlessem\textgreaterbi\textless/em\textgreater da ku. \\
+100_data & duk ina gaya mutane ne ka \textlessem\textgreaterbi\textless/em\textgreater mu hanyar da muke \textlessem\textgreaterbi\textless/em\textgreater da ku. \\
+150_data & all ina gaya wa mutane ne ka \textlessem\textgreaterbi\textless/em\textgreater mu da hanyar da muka \textlessem\textgreaterbi\textless/em\textgreater ka. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table040}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> shi ne cep matelly na <em>biyar</em> cikin shekara hudu. </td> </tr><tr> <th> 100_data </th>
+  <td> shi ne martelly's <em>biyar</em> na fth a cikin shekaru hudu. </td> </tr><tr> <th> 150_data </th>
+  <td> yana da martell's na <em>biyar</em> a cikin shekaru hudu. </td> </tr>
+</table>
+ <br/><button onclick="showhide('041_latex')">Show/Hide LaTeX</button> <br/><pre id="041_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & shi ne cep matelly na \textlessem\textgreaterbiyar\textless/em\textgreater cikin shekara hudu. \\
+100_data & shi ne martelly's \textlessem\textgreaterbiyar\textless/em\textgreater na fth a cikin shekaru hudu. \\
+150_data & yana da martell's na \textlessem\textgreaterbiyar\textless/em\textgreater a cikin shekaru hudu. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table041}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> babu abin da za a iya <em>gani</em> face kyakkyawan sararin samaniya da tsaunuka masu yawa da ke kewayen. baka iya ji ko ganin wadannan daga cikin kogon. </td> </tr><tr> <th> 100_data </th>
+  <td> babu wani abu da za a iya <em>gani</em> da sauran bayyanannu, kyau sama sama da kuma da yawa kewaye da duwatsu. sosai kadan wannan duniya za a iya gani ko ji daga cikin kaisar. </td> </tr><tr> <th> 150_data </th>
+  <td> babu wani abu da za a iya <em>gani</em> daga bayyanannu, kyau sama da kuma da yawa kewaye duw&#227;tsu. sosai kadan wannan duniya za a iya gani ko ji daga cikin cave. </td> </tr>
+</table>
+ <br/><button onclick="showhide('042_latex')">Show/Hide LaTeX</button> <br/><pre id="042_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & babu abin da za a iya \textlessem\textgreatergani\textless/em\textgreater face kyakkyawan sararin samaniya da tsaunuka masu yawa da ke kewayen. baka iya ji ko ganin wadannan daga cikin kogon. \\
+100_data & babu wani abu da za a iya \textlessem\textgreatergani\textless/em\textgreater da sauran bayyanannu, kyau sama sama da kuma da yawa kewaye da duwatsu. sosai kadan wannan duniya za a iya gani ko ji daga cikin kaisar. \\
+150_data & babu wani abu da za a iya \textlessem\textgreatergani\textless/em\textgreater daga bayyanannu, kyau sama da kuma da yawa kewaye duw&#227;tsu. sosai kadan wannan duniya za a iya gani ko ji daga cikin cave. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table042}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> bayan jami'ai sun tantance <em>asalin</em> masu <em>jefa</em> kuri'a, mai <em>jefa</em> kuri'ar ya <em>jefa</em> ambulaf a akwatin murfin kuma ya sanya hannu a takardar kada kuri'a. </td> </tr><tr> <th> 100_data </th>
+  <td> bayan jami'ai sun tabbatar da shugaban majalisar dattijai, da voter drops da envelope a cikin akwatin ballot akwatin da alamu da kuma rike da roll. </td> </tr><tr> <th> 150_data </th>
+  <td> bayan jami'an sun tabbatar da zangon kudi, drops da envelope a cikin akwatin ballot da &#227;y&#245;yin da voting roll. </td> </tr>
+</table>
+ <br/><button onclick="showhide('043_latex')">Show/Hide LaTeX</button> <br/><pre id="043_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & bayan jami'ai sun tantance \textlessem\textgreaterasalin\textless/em\textgreater masu \textlessem\textgreaterjefa\textless/em\textgreater kuri'a, mai \textlessem\textgreaterjefa\textless/em\textgreater kuri'ar ya \textlessem\textgreaterjefa\textless/em\textgreater ambulaf a akwatin murfin kuma ya sanya hannu a takardar kada kuri'a. \\
+100_data & bayan jami'ai sun tabbatar da shugaban majalisar dattijai, da voter drops da envelope a cikin akwatin ballot akwatin da alamu da kuma rike da roll. \\
+150_data & bayan jami'an sun tabbatar da zangon kudi, drops da envelope a cikin akwatin ballot da &#227;y&#245;yin da voting roll. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table043}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> hanya <em>ka&#599;ai</em> mafi saurin wucewarsu shine ta hanyar <em>tura</em> su a matsayin jakunkunan da aka duba. tsarin dokokin kamfunan zirga-zirgar jiragen sama ba ya <em>bada</em> damar <em>tura</em> jaka ba tare da mai ita zai yi tafiya ba, to anan ne inda za ka shigo. </td> </tr><tr> <th> 100_data </th>
+  <td> hanya guda daya kawai don samun shi ta hanyar sauri da aka aika da shi a matsayin bari luggage. airline dokokin ba zai ba da damar aika da su ba tare da fasinjoji ba, wanda yake inda ka zo ba. </td> </tr><tr> <th> 150_data </th>
+  <td> airline dokokin ba zai ba su damar aika da su aika da luggage ba tare da fasinjoji, wanda yake shi ne inda ka zo a. </td> </tr>
+</table>
+ <br/><button onclick="showhide('044_latex')">Show/Hide LaTeX</button> <br/><pre id="044_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & hanya \textlessem\textgreaterka&#599;ai\textless/em\textgreater mafi saurin wucewarsu shine ta hanyar \textlessem\textgreatertura\textless/em\textgreater su a matsayin jakunkunan da aka duba. tsarin dokokin kamfunan zirga-zirgar jiragen sama ba ya \textlessem\textgreaterbada\textless/em\textgreater damar \textlessem\textgreatertura\textless/em\textgreater jaka ba tare da mai ita zai yi tafiya ba, to anan ne inda za ka shigo. \\
+100_data & hanya guda daya kawai don samun shi ta hanyar sauri da aka aika da shi a matsayin bari luggage. airline dokokin ba zai ba da damar aika da su ba tare da fasinjoji ba, wanda yake inda ka zo ba. \\
+150_data & airline dokokin ba zai ba su damar aika da su aika da luggage ba tare da fasinjoji, wanda yake shi ne inda ka zo a. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table044}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> wannan kamar magani ne na <em>alamun</em> cuta a lokuta da <em>yawa.</em> koyaya, idan ba kawai muna <em>son</em> magancewa ta &#599;an lokaci ba ne, to ya kamata mu <em>samo</em> tushen matsalolin, kuma mu kashe su. </td> </tr><tr> <th> 100_data </th>
+  <td> duk da haka, idan ba mu so kawai wani wucin gadi bayani, to, ya kamata mu sami tushen matsalolin, kuma ya kamata mu kunna su. </td> </tr><tr> <th> 150_data </th>
+  <td> duk da haka, idan ba mu so kawai wani wucin gadi bayani, to ya kamata mu sami tushen matsaloli, kuma ya kamata mu lalace su. </td> </tr>
+</table>
+ <br/><button onclick="showhide('045_latex')">Show/Hide LaTeX</button> <br/><pre id="045_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & wannan kamar magani ne na \textlessem\textgreateralamun\textless/em\textgreater cuta a lokuta da \textlessem\textgreateryawa.\textless/em\textgreater koyaya, idan ba kawai muna \textlessem\textgreaterson\textless/em\textgreater magancewa ta &#599;an lokaci ba ne, to ya kamata mu \textlessem\textgreatersamo\textless/em\textgreater tushen matsalolin, kuma mu kashe su. \\
+100_data & duk da haka, idan ba mu so kawai wani wucin gadi bayani, to, ya kamata mu sami tushen matsalolin, kuma ya kamata mu kunna su. \\
+150_data & duk da haka, idan ba mu so kawai wani wucin gadi bayani, to ya kamata mu sami tushen matsaloli, kuma ya kamata mu lalace su. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table045}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>taron</em> na hada da raayi na jamaa da sama. mutane daga sassa <em>daban-daban</em> na duniya sun ci gaba da samar da sababin hanyoyi tsakanin yawancin albarkun <em>mara</em> karewar ganuwan. </td> </tr><tr> <th> 100_data </th>
+  <td> summits sun hada da numfashi-shan ra'ayoyi daga peakaks. danna daga kowane sassa na duniya suna ci gaba da kafa sabon hanyoyi daga ta m m na walls. </td> </tr><tr> <th> 150_data </th>
+  <td> summits sun hada da numfashi-shan views daga peaks. hawa daga dukan sassa na duniya suna ci gaba da kafa sabon hanyoyin routes tsakanin ta m yuwuwar bango. </td> </tr>
+</table>
+ <br/><button onclick="showhide('046_latex')">Show/Hide LaTeX</button> <br/><pre id="046_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreatertaron\textless/em\textgreater na hada da raayi na jamaa da sama. mutane daga sassa \textlessem\textgreaterdaban-daban\textless/em\textgreater na duniya sun ci gaba da samar da sababin hanyoyi tsakanin yawancin albarkun \textlessem\textgreatermara\textless/em\textgreater karewar ganuwan. \\
+100_data & summits sun hada da numfashi-shan ra'ayoyi daga peakaks. danna daga kowane sassa na duniya suna ci gaba da kafa sabon hanyoyi daga ta m m na walls. \\
+150_data & summits sun hada da numfashi-shan views daga peaks. hawa daga dukan sassa na duniya suna ci gaba da kafa sabon hanyoyin routes tsakanin ta m yuwuwar bango. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table046}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> har <em>yanzu,</em> <em>nemi</em> shawara daga hukumomi, yin biyayya ga dukkan alamu, da kuma kula sosai game da <em>gargadin</em> lafiya. </td> </tr><tr> <th> 100_data </th>
+  <td> duk da haka, dauki shawara daga hukumomi, obey dukan alamu, da kuma biya kusa da hankali ga aminci warning. </td> </tr><tr> <th> 150_data </th>
+  <td> duk da haka, dauki shawara daga hukumomi, yi biyayya da dukan alamu, da kuma biya kusa da hankali ga aminci gargadi. </td> </tr>
+</table>
+ <br/><button onclick="showhide('047_latex')">Show/Hide LaTeX</button> <br/><pre id="047_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & har \textlessem\textgreateryanzu,\textless/em\textgreater \textlessem\textgreaternemi\textless/em\textgreater shawara daga hukumomi, yin biyayya ga dukkan alamu, da kuma kula sosai game da \textlessem\textgreatergargadin\textless/em\textgreater lafiya. \\
+100_data & duk da haka, dauki shawara daga hukumomi, obey dukan alamu, da kuma biya kusa da hankali ga aminci warning. \\
+150_data & duk da haka, dauki shawara daga hukumomi, yi biyayya da dukan alamu, da kuma biya kusa da hankali ga aminci gargadi. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table047}
+\end{table}</pre><a name="bucket4"/><h3> Examples for Bucket 4 </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>gidajen</em> caca yawanci suna yin &#409;o&#409;ari da yawa don ha&#595;aka <em>lokaci</em> da ku&#599;in da ba&#409;i suka kashe. tagogi da agogo galibi basa nan, kuma hanyar fita na da wahalar samu. </td> </tr><tr> <th> 100_data </th>
+  <td> <em>gidajen</em> caca yawanci a yi da yawa daidaituwa zuwa maximize <em>lokaci</em> da kuma kudi ciyar da guests. windows da kuma rufe su ne yawanci ajiya, kuma ta iya wuya a yi. </td> </tr><tr> <th> 150_data </th>
+  <td> windows da tufafi ne yawanci m, kuma ta iya zama wuya a sami. </td> </tr>
+</table>
+ <br/><button onclick="showhide('048_latex')">Show/Hide LaTeX</button> <br/><pre id="048_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreatergidajen\textless/em\textgreater caca yawanci suna yin &#409;o&#409;ari da yawa don ha&#595;aka \textlessem\textgreaterlokaci\textless/em\textgreater da ku&#599;in da ba&#409;i suka kashe. tagogi da agogo galibi basa nan, kuma hanyar fita na da wahalar samu. \\
+100_data & \textlessem\textgreatergidajen\textless/em\textgreater caca yawanci a yi da yawa daidaituwa zuwa maximize \textlessem\textgreaterlokaci\textless/em\textgreater da kuma kudi ciyar da guests. windows da kuma rufe su ne yawanci ajiya, kuma ta iya wuya a yi. \\
+150_data & windows da tufafi ne yawanci m, kuma ta iya zama wuya a sami. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table048}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> dabbobin daji da ba su da yawa <em>irin</em> su malu mai launin ruwan kasa da ke turai, kerkeci, mikiya, mujiya, kyanwar daji da kuma capercaillie a na iya samun su a can, tare da nau&#8217;ukan gama garin dabbobi masu yawa. </td> </tr><tr> <th> 100_data </th>
+  <td> rare fauna <em>irin</em> su turai ruwan kasa bear, wolf, eagle, owl, lyx, daji cat da capercailkarya za a iya samu a can, tare da mafi yawan dabbobi </td> </tr><tr> <th> 150_data </th>
+  <td> rare fauna kamar turai brown bear, wolf, eagle, m, lynx, daji cat da capercailkarya za a iya samu a can, tare da mutane da yawa more kowa jinsuna </td> </tr>
+</table>
+ <br/><button onclick="showhide('049_latex')">Show/Hide LaTeX</button> <br/><pre id="049_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & dabbobin daji da ba su da yawa \textlessem\textgreateririn\textless/em\textgreater su malu mai launin ruwan kasa da ke turai, kerkeci, mikiya, mujiya, kyanwar daji da kuma capercaillie a na iya samun su a can, tare da nau&#8217;ukan gama garin dabbobi masu yawa. \\
+100_data & rare fauna \textlessem\textgreateririn\textless/em\textgreater su turai ruwan kasa bear, wolf, eagle, owl, lyx, daji cat da capercailkarya za a iya samu a can, tare da mafi yawan dabbobi \\
+150_data & rare fauna kamar turai brown bear, wolf, eagle, m, lynx, daji cat da capercailkarya za a iya samu a can, tare da mutane da yawa more kowa jinsuna \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table049}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> da aka nemi tsokacinsa, sai miller ya ce, &#8220;mike ya yi magana da yawa lokacin zaman jin ba&#8217;asin...ina kan shiri saboda haka <em>ban</em> saurari abin da yake cewa ba.&#8221; </td> </tr><tr> <th> 100_data </th>
+  <td> lokacin da aka tambaye shi don sharhi, madara ya ce, "mike yayi magana da yawa a lokacin da ji....an samun shirye shirye don haka ba ni da gaske ji abin da yake cewa. " </td> </tr><tr> <th> 150_data </th>
+  <td> a lokacin da aka nemi sharhi, miller ya ce, "mike tattaunawa mai yawa a lokacin ji....i aka samun shirye don haka <em>ban</em> gaske ji abin da ya ce. " </td> </tr>
+</table>
+ <br/><button onclick="showhide('050_latex')">Show/Hide LaTeX</button> <br/><pre id="050_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & da aka nemi tsokacinsa, sai miller ya ce, &#8220;mike ya yi magana da yawa lokacin zaman jin ba&#8217;asin...ina kan shiri saboda haka \textlessem\textgreaterban\textless/em\textgreater saurari abin da yake cewa ba.&#8221; \\
+100_data & lokacin da aka tambaye shi don sharhi, madara ya ce, "mike yayi magana da yawa a lokacin da ji....an samun shirye shirye don haka ba ni da gaske ji abin da yake cewa. " \\
+150_data & a lokacin da aka nemi sharhi, miller ya ce, "mike tattaunawa mai yawa a lokacin ji....i aka samun shirye don haka \textlessem\textgreaterban\textless/em\textgreater gaske ji abin da ya ce. " \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table050}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> ana nuna wuraren <em>akan</em> dalar kuma an haskaka dalolin mabambanta. </td> </tr><tr> <th> 100_data </th>
+  <td> an nuna rubutun a kan pyramids da daban-daban pyramids ne lit up. </td> </tr><tr> <th> 150_data </th>
+  <td> ana nuna abubuwan da aka nuna <em>akan</em> pyramids da daban-daban pyramids suna up. </td> </tr>
+</table>
+ <br/><button onclick="showhide('051_latex')">Show/Hide LaTeX</button> <br/><pre id="051_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & ana nuna wuraren \textlessem\textgreaterakan\textless/em\textgreater dalar kuma an haskaka dalolin mabambanta. \\
+100_data & an nuna rubutun a kan pyramids da daban-daban pyramids ne lit up. \\
+150_data & ana nuna abubuwan da aka nuna \textlessem\textgreaterakan\textless/em\textgreater pyramids da daban-daban pyramids suna up. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table051}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> juyin juya hali na faransa ya kuma ba <em>sauran</em> wasu mutane masu tsananin karfi na wata &#409;asa damar fara nasu juyin juya halin. </td> </tr><tr> <th> 100_data </th>
+  <td> juyin juya halin faransa kuma ya wahayi wahayi da yawa <em>sauran</em> aiki aji mutane na sauran kasarsu ta fara juyin halin ka. </td> </tr><tr> <th> 150_data </th>
+  <td> juyin juyin halitta na faransa kuma ya jagoranci wasu mutane da yawa suna aiki na wasu kasashen da suka fara juyin halittu na kansu. </td> </tr>
+</table>
+ <br/><button onclick="showhide('052_latex')">Show/Hide LaTeX</button> <br/><pre id="052_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & juyin juya hali na faransa ya kuma ba \textlessem\textgreatersauran\textless/em\textgreater wasu mutane masu tsananin karfi na wata &#409;asa damar fara nasu juyin juya halin. \\
+100_data & juyin juya halin faransa kuma ya wahayi wahayi da yawa \textlessem\textgreatersauran\textless/em\textgreater aiki aji mutane na sauran kasarsu ta fara juyin halin ka. \\
+150_data & juyin juyin halitta na faransa kuma ya jagoranci wasu mutane da yawa suna aiki na wasu kasashen da suka fara juyin halittu na kansu. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table052}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> faransa ce kasa ta bakwai a cikin tarayyar <em>turai</em> da ke fama da wannan cutar; sun bi austria, jamus, slovenia, bulgaria, girka da italiya. </td> </tr><tr> <th> 100_data </th>
+  <td> faransa ne bakwai kasar a tarayyar <em>turai</em> don sha wahala da wannan budurwa; wadannan austria, jamus, slovenia, bulgaria, girka da italiya. </td> </tr><tr> <th> 150_data </th>
+  <td> faransa ita ce kasar ta bakwai a tarayyar <em>turai</em> don wahalar da wannan virus; wadannan austria, jamus, slovenia, bulgaria, girka da italiya. </td> </tr>
+</table>
+ <br/><button onclick="showhide('053_latex')">Show/Hide LaTeX</button> <br/><pre id="053_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & faransa ce kasa ta bakwai a cikin tarayyar \textlessem\textgreaterturai\textless/em\textgreater da ke fama da wannan cutar; sun bi austria, jamus, slovenia, bulgaria, girka da italiya. \\
+100_data & faransa ne bakwai kasar a tarayyar \textlessem\textgreaterturai\textless/em\textgreater don sha wahala da wannan budurwa; wadannan austria, jamus, slovenia, bulgaria, girka da italiya. \\
+150_data & faransa ita ce kasar ta bakwai a tarayyar \textlessem\textgreaterturai\textless/em\textgreater don wahalar da wannan virus; wadannan austria, jamus, slovenia, bulgaria, girka da italiya. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table053}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> aukuwar tsananin <em>yanayin</em> yanki da na lokacin sun hada da guguwar iska, hadari mai dusar kankara, guguwar kankara, da guguwar &#409;ura. </td> </tr><tr> <th> 100_data </th>
+  <td> yankin da kuma yanki mai tsanani <em>yanayin</em> abubuwan hada da littafi zards, snowstorms, kankara storms, kuma kura storms. </td> </tr><tr> <th> 150_data </th>
+  <td> yankin da kuma yanayi mai tsanani <em>yanayin</em> mamaye sun hada da blizards, snowstorms, kankara storms, da kuma kura storms. </td> </tr>
+</table>
+ <br/><button onclick="showhide('054_latex')">Show/Hide LaTeX</button> <br/><pre id="054_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & aukuwar tsananin \textlessem\textgreateryanayin\textless/em\textgreater yanki da na lokacin sun hada da guguwar iska, hadari mai dusar kankara, guguwar kankara, da guguwar &#409;ura. \\
+100_data & yankin da kuma yanki mai tsanani \textlessem\textgreateryanayin\textless/em\textgreater abubuwan hada da littafi zards, snowstorms, kankara storms, kuma kura storms. \\
+150_data & yankin da kuma yanayi mai tsanani \textlessem\textgreateryanayin\textless/em\textgreater mamaye sun hada da blizards, snowstorms, kankara storms, da kuma kura storms. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table054}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> kafin isowar sojoji, haiti bata taba fuskantar matsalolin da suka shafi <em>cutar</em> ba tun a shekarun 1800s. </td> </tr><tr> <th> 100_data </th>
+  <td> kafin zuwa isowa na troops, babban yana da matsalolin da suka shafi <em>cutar</em> tun da 1800s. </td> </tr><tr> <th> 150_data </th>
+  <td> kafin zuwan troops, ma'aikata bai tabbatar da matsalolin da suka shafi <em>cutar</em> tun daga 1800s. </td> </tr>
+</table>
+ <br/><button onclick="showhide('055_latex')">Show/Hide LaTeX</button> <br/><pre id="055_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & kafin isowar sojoji, haiti bata taba fuskantar matsalolin da suka shafi \textlessem\textgreatercutar\textless/em\textgreater ba tun a shekarun 1800s. \\
+100_data & kafin zuwa isowa na troops, babban yana da matsalolin da suka shafi \textlessem\textgreatercutar\textless/em\textgreater tun da 1800s. \\
+150_data & kafin zuwan troops, ma'aikata bai tabbatar da matsalolin da suka shafi \textlessem\textgreatercutar\textless/em\textgreater tun daga 1800s. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table055}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> 'yan wasa suna son cin <em>kananan</em> dabbobi. za su kama birai, macizai, zazzage da tsuntsaye in sun iya. kusan dukkan dabbobin da dutsen ya farauto suna &#409;asa da shi. </td> </tr><tr> <th> 100_data </th>
+  <td> ya faru kamar ci <em>kananan</em> dabbobi. za su kama kudi, snakes, tsuntsaye da tsuntsaye idan suka iya. </td> </tr><tr> <th> 150_data </th>
+  <td> kusan dukkanin dabbobi da suka mamaye <em>kananan</em> dabbobi. za su kama kudi, snakes, hatsarori da tsuntsaye idan sun iya. kusan dukkanin dabbobi da suka faru yawa sun fi karami fiye da shi. </td> </tr>
+</table>
+ <br/><button onclick="showhide('056_latex')">Show/Hide LaTeX</button> <br/><pre id="056_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & 'yan wasa suna son cin \textlessem\textgreaterkananan\textless/em\textgreater dabbobi. za su kama birai, macizai, zazzage da tsuntsaye in sun iya. kusan dukkan dabbobin da dutsen ya farauto suna &#409;asa da shi. \\
+100_data & ya faru kamar ci \textlessem\textgreaterkananan\textless/em\textgreater dabbobi. za su kama kudi, snakes, tsuntsaye da tsuntsaye idan suka iya. \\
+150_data & kusan dukkanin dabbobi da suka mamaye \textlessem\textgreaterkananan\textless/em\textgreater dabbobi. za su kama kudi, snakes, hatsarori da tsuntsaye idan sun iya. kusan dukkanin dabbobi da suka faru yawa sun fi karami fiye da shi. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table056}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> an tsara zai kai shekaru 40 masu zuwa kuma za ayi ya&#409;e shi a hakika,ta sojojin haya, a filayen ya&#409;i daga africa zuwa asia, a afghanistan, cuba da <em>sauran</em> wurare da dama. </td> </tr><tr> <th> 100_data </th>
+  <td> ya kasance a karshe na 40 shekaru da kuma za a nemi real, da proxy armies, a kan yawon shakatawa daga afrika zuwa asiya, a fannin anistan, cuba da kuma <em>sauran</em> wurare. </td> </tr><tr> <th> 150_data </th>
+  <td> a karshe na gaba shekaru 40 kuma za a yi ya&#409;i domin real, da proxy armies, a kan hare-hare daga afrika zuwa asiya, a birnin aniya, cuba da kuma <em>sauran</em> wurare. </td> </tr>
+</table>
+ <br/><button onclick="showhide('057_latex')">Show/Hide LaTeX</button> <br/><pre id="057_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & an tsara zai kai shekaru 40 masu zuwa kuma za ayi ya&#409;e shi a hakika,ta sojojin haya, a filayen ya&#409;i daga africa zuwa asia, a afghanistan, cuba da \textlessem\textgreatersauran\textless/em\textgreater wurare da dama. \\
+100_data & ya kasance a karshe na 40 shekaru da kuma za a nemi real, da proxy armies, a kan yawon shakatawa daga afrika zuwa asiya, a fannin anistan, cuba da kuma \textlessem\textgreatersauran\textless/em\textgreater wurare. \\
+150_data & a karshe na gaba shekaru 40 kuma za a yi ya&#409;i domin real, da proxy armies, a kan hare-hare daga afrika zuwa asiya, a birnin aniya, cuba da kuma \textlessem\textgreatersauran\textless/em\textgreater wurare. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table057}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> wannan ya zama aikin gama gari, sai &#409;arfe ya <em>haifar</em> da <em>&#409;arin</em> lalacewa a &#409;afafun katako na kekunan. </td> </tr><tr> <th> 100_data </th>
+  <td> wannan ya zama na kowa aiki, amma ba&#409;in &#409;arfe ya sa ya sa a kan katako, &#409;afafun kwaikwayon. </td> </tr><tr> <th> 150_data </th>
+  <td> wannan ya zama aiki na kowa, amma ba&#409;in &#409;arfe ya sa akan &#409;afafun katako, &#409;afafun wagons. </td> </tr>
+</table>
+ <br/><button onclick="showhide('058_latex')">Show/Hide LaTeX</button> <br/><pre id="058_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & wannan ya zama aikin gama gari, sai &#409;arfe ya \textlessem\textgreaterhaifar\textless/em\textgreater da \textlessem\textgreater&#409;arin\textless/em\textgreater lalacewa a &#409;afafun katako na kekunan. \\
+100_data & wannan ya zama na kowa aiki, amma ba&#409;in &#409;arfe ya sa ya sa a kan katako, &#409;afafun kwaikwayon. \\
+150_data & wannan ya zama aiki na kowa, amma ba&#409;in &#409;arfe ya sa akan &#409;afafun katako, &#409;afafun wagons. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table058}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> a hakika akwai matukar wahalar <em>gano</em> wajen ko <em>ma</em> ka idan ka san ya kasance. kana shiga cikin kogon zaka ji kadaita ta kama ka. </td> </tr><tr> <th> 100_data </th>
+  <td> da zarar an kasance a cikin cave, shi ne mai jimlar kadaici. </td> </tr><tr> <th> 150_data </th>
+  <td> da zarar a cikin cave, yana da duka kadaici. </td> </tr>
+</table>
+ <br/><button onclick="showhide('059_latex')">Show/Hide LaTeX</button> <br/><pre id="059_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & a hakika akwai matukar wahalar \textlessem\textgreatergano\textless/em\textgreater wajen ko \textlessem\textgreaterma\textless/em\textgreater ka idan ka san ya kasance. kana shiga cikin kogon zaka ji kadaita ta kama ka. \\
+100_data & da zarar an kasance a cikin cave, shi ne mai jimlar kadaici. \\
+150_data & da zarar a cikin cave, yana da duka kadaici. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table059}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> kamar yadda ilimin girka ya ragu, ita yamma ta sami kanta daga yankewar <em>tushen</em> falsafa da <em>tushen</em> kimiyya. </td> </tr><tr> <th> 100_data </th>
+  <td> kamar yadda ilmi na helenanci girkanci, mafi yawan samu kanta yanke kansa daga helenanci falsafa da kimiyya roots. </td> </tr><tr> <th> 150_data </th>
+  <td> kamar yadda ilmi na greek bayyana, yamma sami kanta yanke daga girkanci falsafa falsafa da kimiyya roots. </td> </tr>
+</table>
+ <br/><button onclick="showhide('060_latex')">Show/Hide LaTeX</button> <br/><pre id="060_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & kamar yadda ilimin girka ya ragu, ita yamma ta sami kanta daga yankewar \textlessem\textgreatertushen\textless/em\textgreater falsafa da \textlessem\textgreatertushen\textless/em\textgreater kimiyya. \\
+100_data & kamar yadda ilmi na helenanci girkanci, mafi yawan samu kanta yanke kansa daga helenanci falsafa da kimiyya roots. \\
+150_data & kamar yadda ilmi na greek bayyana, yamma sami kanta yanke daga girkanci falsafa falsafa da kimiyya roots. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table060}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> kyawawan siffofin da suke <em>tabbatar</em> da wata &#409;aramar al&#8217;ada a matsayin wadda ta fita daban kan iya kasancewa na yare, <em>kyau,</em> addini, siyasa, jinsi, na yanki, ko hadin abubuwa. </td> </tr><tr> <th> 100_data </th>
+  <td> halayen da aka tantance al'adar musamman a matsayin za'a iya ha&#599;uwa, addini, addini, siyasa, siyasa, jima'i, geographical, ko hade da factors. </td> </tr><tr> <th> 150_data </th>
+  <td> halayen da ke tantance abubuwan al'ajabi kamar yadda zai iya zama linguistic, aesthetic, addini, siyasa, siyasa, jima'i, geographical, ko hade da factory. </td> </tr>
+</table>
+ <br/><button onclick="showhide('061_latex')">Show/Hide LaTeX</button> <br/><pre id="061_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & kyawawan siffofin da suke \textlessem\textgreatertabbatar\textless/em\textgreater da wata &#409;aramar al&#8217;ada a matsayin wadda ta fita daban kan iya kasancewa na yare, \textlessem\textgreaterkyau,\textless/em\textgreater addini, siyasa, jinsi, na yanki, ko hadin abubuwa. \\
+100_data & halayen da aka tantance al'adar musamman a matsayin za'a iya ha&#599;uwa, addini, addini, siyasa, siyasa, jima'i, geographical, ko hade da factors. \\
+150_data & halayen da ke tantance abubuwan al'ajabi kamar yadda zai iya zama linguistic, aesthetic, addini, siyasa, siyasa, jima'i, geographical, ko hade da factory. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table061}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> fushin al&#8217;ummar ya kai ga <em>&#409;o&#409;arin</em> da ake yi na <em>samar</em> da tsari dangane da al&#8217;amuran da suka jibanci jima&#8217;i a shafin da ke daukar miliyoyin kafafen yada labarai da ke da lasisi. </td> </tr><tr> <th> 100_data </th>
+  <td> al'umma sun jagoranci jagorancin zuwa yanzu efts don jagoranci manufofin jima'i game da abubuwan da ke ciki ga shafin da ke tattare da miliyoyin budewa na openly-lasisi media. </td> </tr><tr> <th> 150_data </th>
+  <td> the al'umma bayyana kai ga halin yanzu kokarin yi wani manufofin game da jima'i abun ciki ga site wanda runduna miliyoyin bude-lasisi media. </td> </tr>
+</table>
+ <br/><button onclick="showhide('062_latex')">Show/Hide LaTeX</button> <br/><pre id="062_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & fushin al&#8217;ummar ya kai ga \textlessem\textgreater&#409;o&#409;arin\textless/em\textgreater da ake yi na \textlessem\textgreatersamar\textless/em\textgreater da tsari dangane da al&#8217;amuran da suka jibanci jima&#8217;i a shafin da ke daukar miliyoyin kafafen yada labarai da ke da lasisi. \\
+100_data & al'umma sun jagoranci jagorancin zuwa yanzu efts don jagoranci manufofin jima'i game da abubuwan da ke ciki ga shafin da ke tattare da miliyoyin budewa na openly-lasisi media. \\
+150_data & the al'umma bayyana kai ga halin yanzu kokarin yi wani manufofin game da jima'i abun ciki ga site wanda runduna miliyoyin bude-lasisi media. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table062}
+\end{table}</pre><a name="bucket5"/><h3> Examples for Bucket [5,10) </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> wadannan dangantaka suna taimakawa <em>wajen</em> tsari, zayyana, da kuma gudanar da kayayyakin babbar hanya. </td> </tr><tr> <th> 100_data </th>
+  <td> wadannan dannan dangantaka taimako a shiryawa, zane, da kuma ayyuka na roadway wurare. </td> </tr><tr> <th> 150_data </th>
+  <td> wadannan dangantaka taimaka <em>wajen</em> shiryawa, zane, da kuma ayyukan roadway wurare. </td> </tr>
+</table>
+ <br/><button onclick="showhide('063_latex')">Show/Hide LaTeX</button> <br/><pre id="063_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & wadannan dangantaka suna taimakawa \textlessem\textgreaterwajen\textless/em\textgreater tsari, zayyana, da kuma gudanar da kayayyakin babbar hanya. \\
+100_data & wadannan dannan dangantaka taimako a shiryawa, zane, da kuma ayyuka na roadway wurare. \\
+150_data & wadannan dangantaka taimaka \textlessem\textgreaterwajen\textless/em\textgreater shiryawa, zane, da kuma ayyukan roadway wurare. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table063}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> cikakken kashi 20 cikin dari na ruwan da ke zubowa daga koramun duniyar zuwa cikin <em>teku</em> yana zuwa ne daga amazon. </td> </tr><tr> <th> 100_data </th>
+  <td> cikakken kashi 20 na ruwa cewa 'yan kasuwa daga cikin shirin shuka a cikin <em>teku</em> ya zo daga amazon. </td> </tr><tr> <th> 150_data </th>
+  <td> cikakken kashi 20 na ruwan da ke cikin 'yan kasuwa daga jirgin ruwa a cikin tekun sun zo daga amazon. </td> </tr>
+</table>
+ <br/><button onclick="showhide('064_latex')">Show/Hide LaTeX</button> <br/><pre id="064_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & cikakken kashi 20 cikin dari na ruwan da ke zubowa daga koramun duniyar zuwa cikin \textlessem\textgreaterteku\textless/em\textgreater yana zuwa ne daga amazon. \\
+100_data & cikakken kashi 20 na ruwa cewa 'yan kasuwa daga cikin shirin shuka a cikin \textlessem\textgreaterteku\textless/em\textgreater ya zo daga amazon. \\
+150_data & cikakken kashi 20 na ruwan da ke cikin 'yan kasuwa daga jirgin ruwa a cikin tekun sun zo daga amazon. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table064}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> ma'aikatar ta amsa ta <em>hanyar</em> kiran dage apple din rahoton &#8220;abin takaici ne kwarai da gaske.&#8221; </td> </tr><tr> <th> 100_data </th>
+  <td> ma'aikatar kira ta <em>hanyar</em> aikace-aikacen postgraduate na rahoton "da gaske grettable." </td> </tr><tr> <th> 150_data </th>
+  <td> ma'aikatar kira apple ta postposting na rahoton "gaskiya regrettable." </td> </tr>
+</table>
+ <br/><button onclick="showhide('065_latex')">Show/Hide LaTeX</button> <br/><pre id="065_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & ma'aikatar ta amsa ta \textlessem\textgreaterhanyar\textless/em\textgreater kiran dage apple din rahoton &#8220;abin takaici ne kwarai da gaske.&#8221; \\
+100_data & ma'aikatar kira ta \textlessem\textgreaterhanyar\textless/em\textgreater aikace-aikacen postgraduate na rahoton "da gaske grettable." \\
+150_data & ma'aikatar kira apple ta postposting na rahoton "gaskiya regrettable." \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table065}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> babban jami'in <em>shirin</em> rufe jirgin nasa, n. wayne hale jr. ya ce kumburin ya fadi &#8220;bayan lokacin da muke damuwa.&#8221; </td> </tr><tr> <th> 100_data </th>
+  <td> shugaban kasa muhammadu buhari ya bayyana hakan ne a ranar laraba. </td> </tr><tr> <th> 150_data </th>
+  <td> shugaban <em>shirin</em> nasa, n. wayne hale jr. ya ce kumfa ya auku "bayan lokacin da muke damuwa game da fita." </td> </tr>
+</table>
+ <br/><button onclick="showhide('066_latex')">Show/Hide LaTeX</button> <br/><pre id="066_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & babban jami'in \textlessem\textgreatershirin\textless/em\textgreater rufe jirgin nasa, n. wayne hale jr. ya ce kumburin ya fadi &#8220;bayan lokacin da muke damuwa.&#8221; \\
+100_data & shugaban kasa muhammadu buhari ya bayyana hakan ne a ranar laraba. \\
+150_data & shugaban \textlessem\textgreatershirin\textless/em\textgreater nasa, n. wayne hale jr. ya ce kumfa ya auku "bayan lokacin da muke damuwa game da fita." \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table066}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> d k arya, mataimakin sufeto janar ya ce, &#8220;mun <em>kama</em> mutane biyar da suka yi wa yar <em>kasar</em> switzerland fyade kuma an gano wayarta ta <em>hannu</em> da kwamfutar taa </td> </tr><tr> <th> 100_data </th>
+  <td> shugaban kasa muhammadu buhari ya bayyana hakan ne a lokacin da yake jawabi wajen yaki da cutar coronavirus/covid-19 a najeriya. </td> </tr><tr> <th> 150_data </th>
+  <td> mataimakin shugaban janar d d arya ya ce, "mun <em>kama</em> mutane biyar da suka rage matar swiss da kuma sake rufe ta <em>hannu</em> da kwamfutar tafi-da-gidanka". </td> </tr>
+</table>
+ <br/><button onclick="showhide('067_latex')">Show/Hide LaTeX</button> <br/><pre id="067_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & d k arya, mataimakin sufeto janar ya ce, &#8220;mun \textlessem\textgreaterkama\textless/em\textgreater mutane biyar da suka yi wa yar \textlessem\textgreaterkasar\textless/em\textgreater switzerland fyade kuma an gano wayarta ta \textlessem\textgreaterhannu\textless/em\textgreater da kwamfutar taa \\
+100_data & shugaban kasa muhammadu buhari ya bayyana hakan ne a lokacin da yake jawabi wajen yaki da cutar coronavirus/covid-19 a najeriya. \\
+150_data & mataimakin shugaban janar d d arya ya ce, "mun \textlessem\textgreaterkama\textless/em\textgreater mutane biyar da suka rage matar swiss da kuma sake rufe ta \textlessem\textgreaterhannu\textless/em\textgreater da kwamfutar tafi-da-gidanka". \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table067}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> don <em>haka,</em> da alama an &#409;ara tsarin rubutun ne <em>kawai</em> a matsayin la&#409;abi. </td> </tr><tr> <th> 100_data </th>
+  <td> don <em>haka,</em> yana iya ganin cewa an kara da cewa an kara <em>kawai</em> a matsayin label. </td> </tr><tr> <th> 150_data </th>
+  <td> don <em>haka,</em> zai yiwu cewa an kara sanarwar <em>kawai</em> a matsayin label. </td> </tr>
+</table>
+ <br/><button onclick="showhide('068_latex')">Show/Hide LaTeX</button> <br/><pre id="068_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & don \textlessem\textgreaterhaka,\textless/em\textgreater da alama an &#409;ara tsarin rubutun ne \textlessem\textgreaterkawai\textless/em\textgreater a matsayin la&#409;abi. \\
+100_data & don \textlessem\textgreaterhaka,\textless/em\textgreater yana iya ganin cewa an kara da cewa an kara \textlessem\textgreaterkawai\textless/em\textgreater a matsayin label. \\
+150_data & don \textlessem\textgreaterhaka,\textless/em\textgreater zai yiwu cewa an kara sanarwar \textlessem\textgreaterkawai\textless/em\textgreater a matsayin label. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table068}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>sakamakon</em> <em>haka,</em> nau'in kifaye biyu sun &#595;ace, wasu biyu kuma suna cikin ha&#599;ari, da suka ha&#599;a da chub mai &#409;usumbi. </td> </tr><tr> <th> 100_data </th>
+  <td> <em>sakamakon</em> <em>haka,</em> nau'ikan kifi biyu sun zama extinct, kuma wasu biyu sun zama endanish d, gami da humpback chub. </td> </tr><tr> <th> 150_data </th>
+  <td> <em>sakamakon</em> <em>haka,</em> nau'ikan kifi biyu sun zama extinct, kuma wasu biyu sun zama endanaus, gami da chub. </td> </tr>
+</table>
+ <br/><button onclick="showhide('069_latex')">Show/Hide LaTeX</button> <br/><pre id="069_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreatersakamakon\textless/em\textgreater \textlessem\textgreaterhaka,\textless/em\textgreater nau'in kifaye biyu sun &#595;ace, wasu biyu kuma suna cikin ha&#599;ari, da suka ha&#599;a da chub mai &#409;usumbi. \\
+100_data & \textlessem\textgreatersakamakon\textless/em\textgreater \textlessem\textgreaterhaka,\textless/em\textgreater nau'ikan kifi biyu sun zama extinct, kuma wasu biyu sun zama endanish d, gami da humpback chub. \\
+150_data & \textlessem\textgreatersakamakon\textless/em\textgreater \textlessem\textgreaterhaka,\textless/em\textgreater nau'ikan kifi biyu sun zama extinct, kuma wasu biyu sun zama endanaus, gami da chub. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table069}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> halin da ke <em>tsakanin</em> cututtukan kwakwalwa da <em>halayyar</em> yana tallafawa masana kimiyya a cikin binciken su. </td> </tr><tr> <th> 100_data </th>
+  <td> dangane da <em>tsakanin</em> kwakwalwa pathology da <em>halayyar</em> mu masana kimiyya a cikin bincike. </td> </tr><tr> <th> 150_data </th>
+  <td> dangane da kwakwalwa <em>tsakanin</em> pathology da <em>halayyar</em> mu goyan bayan masana kimiyya a cikin bincikensu. </td> </tr>
+</table>
+ <br/><button onclick="showhide('070_latex')">Show/Hide LaTeX</button> <br/><pre id="070_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & halin da ke \textlessem\textgreatertsakanin\textless/em\textgreater cututtukan kwakwalwa da \textlessem\textgreaterhalayyar\textless/em\textgreater yana tallafawa masana kimiyya a cikin binciken su. \\
+100_data & dangane da \textlessem\textgreatertsakanin\textless/em\textgreater kwakwalwa pathology da \textlessem\textgreaterhalayyar\textless/em\textgreater mu masana kimiyya a cikin bincike. \\
+150_data & dangane da kwakwalwa \textlessem\textgreatertsakanin\textless/em\textgreater pathology da \textlessem\textgreaterhalayyar\textless/em\textgreater mu goyan bayan masana kimiyya a cikin bincikensu. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table070}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> cututuka masu iya yaduwa da kansu, ko kuma <em>dabbobi</em> da ke da hatsari da za su iya raunatawa ko <em>kashe</em> mutane da karfi, ba su cancanta a matsayin kwari ba. </td> </tr><tr> <th> 100_data </th>
+  <td> cututtukan cututtukan kansu, ko hadarurruka <em>dabbobi</em> da zasu iya <em>kashe</em> mutane ta hanyar haka, kada ku yawanci cancantar kamar yadda pests. </td> </tr><tr> <th> 150_data </th>
+  <td> cututtukan cututtuka masu cututtuka, ko <em>dabbobi</em> masu hatsari wa&#599;anda zasu iya <em>kashe</em> mutane ta hanyar karfi, kada ku cancanci matsayin pests. </td> </tr>
+</table>
+ <br/><button onclick="showhide('071_latex')">Show/Hide LaTeX</button> <br/><pre id="071_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & cututuka masu iya yaduwa da kansu, ko kuma \textlessem\textgreaterdabbobi\textless/em\textgreater da ke da hatsari da za su iya raunatawa ko \textlessem\textgreaterkashe\textless/em\textgreater mutane da karfi, ba su cancanta a matsayin kwari ba. \\
+100_data & cututtukan cututtukan kansu, ko hadarurruka \textlessem\textgreaterdabbobi\textless/em\textgreater da zasu iya \textlessem\textgreaterkashe\textless/em\textgreater mutane ta hanyar haka, kada ku yawanci cancantar kamar yadda pests. \\
+150_data & cututtukan cututtuka masu cututtuka, ko \textlessem\textgreaterdabbobi\textless/em\textgreater masu hatsari wa&#599;anda zasu iya \textlessem\textgreaterkashe\textless/em\textgreater mutane ta hanyar karfi, kada ku cancanci matsayin pests. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table071}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> masuntan &#409;abilar berner su ne suka kafa sabon <em>birnin</em> casablanca a karni na 10 bce, kuma phoenicians, rumawa, da merenids sun yi amfani da shi a matsayin tashar jirgin ruwa mai amfani da ake <em>kira</em> anfa. </td> </tr><tr> <th> 100_data </th>
+  <td> <em>birnin</em> zamani na casablanca da aka kafa ta berfishermen a cikin 10th karni bce, kuma aka yi amfani da phoenicians, romans, da kuma m a matsayin dabarun tashar jiragen ruwa da ake <em>kira</em> anfafa. </td> </tr><tr> <th> 150_data </th>
+  <td> <em>birnin</em> na zamani na casablanca aka kafa ta berber fishermen a cikin 10th karni bce, kuma an yi amfani da phoenicians, romans, da merenids a matsayin dabarun tashar jiragen ruwa da ake <em>kira</em> anfa. </td> </tr>
+</table>
+ <br/><button onclick="showhide('072_latex')">Show/Hide LaTeX</button> <br/><pre id="072_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & masuntan &#409;abilar berner su ne suka kafa sabon \textlessem\textgreaterbirnin\textless/em\textgreater casablanca a karni na 10 bce, kuma phoenicians, rumawa, da merenids sun yi amfani da shi a matsayin tashar jirgin ruwa mai amfani da ake \textlessem\textgreaterkira\textless/em\textgreater anfa. \\
+100_data & \textlessem\textgreaterbirnin\textless/em\textgreater zamani na casablanca da aka kafa ta berfishermen a cikin 10th karni bce, kuma aka yi amfani da phoenicians, romans, da kuma m a matsayin dabarun tashar jiragen ruwa da ake \textlessem\textgreaterkira\textless/em\textgreater anfafa. \\
+150_data & \textlessem\textgreaterbirnin\textless/em\textgreater na zamani na casablanca aka kafa ta berber fishermen a cikin 10th karni bce, kuma an yi amfani da phoenicians, romans, da merenids a matsayin dabarun tashar jiragen ruwa da ake \textlessem\textgreaterkira\textless/em\textgreater anfa. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table072}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> noma domin <em>abinci</em> <em>kawai</em> <em>abu</em> ne mai sauki, sau da yawa, ana amfani da iri na shuka wanda ya dace da <em>kasar</em> noman wajen, tare da sauya <em>abin</em> shuka duk <em>shekara</em> a gona guda, domin <em>samun</em> cikakkiyar yabanya. </td> </tr><tr> <th> 100_data </th>
+  <td> subsified noma ne mai sauki, sau da yawa gabobin, tsarin amfani da ajiye 'yan qasar zuwa ecoregion hade da amfanin gona juyawa ko wasu gwada sauki dabaru don kara daidaitawa. </td> </tr><tr> <th> 150_data </th>
+  <td> gona noma ne mai sauki, sau da yawa gabobin, tsarin amfani da ajiye asalin da ecoregion a hade tare da amfanin gona juyawa ko wasu mun gwada sauki dabaru don kara gauraye yi. </td> </tr>
+</table>
+ <br/><button onclick="showhide('073_latex')">Show/Hide LaTeX</button> <br/><pre id="073_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & noma domin \textlessem\textgreaterabinci\textless/em\textgreater \textlessem\textgreaterkawai\textless/em\textgreater \textlessem\textgreaterabu\textless/em\textgreater ne mai sauki, sau da yawa, ana amfani da iri na shuka wanda ya dace da \textlessem\textgreaterkasar\textless/em\textgreater noman wajen, tare da sauya \textlessem\textgreaterabin\textless/em\textgreater shuka duk \textlessem\textgreatershekara\textless/em\textgreater a gona guda, domin \textlessem\textgreatersamun\textless/em\textgreater cikakkiyar yabanya. \\
+100_data & subsified noma ne mai sauki, sau da yawa gabobin, tsarin amfani da ajiye 'yan qasar zuwa ecoregion hade da amfanin gona juyawa ko wasu gwada sauki dabaru don kara daidaitawa. \\
+150_data & gona noma ne mai sauki, sau da yawa gabobin, tsarin amfani da ajiye asalin da ecoregion a hade tare da amfanin gona juyawa ko wasu mun gwada sauki dabaru don kara gauraye yi. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table073}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> a hakika akwai matukar wahalar gano <em>wajen</em> ko ma ka <em>idan</em> ka san ya kasance. <em>kana</em> shiga cikin kogon zaka <em>ji</em> kadaita ta <em>kama</em> ka. </td> </tr><tr> <th> 100_data </th>
+  <td> da zarar an kasance a cikin cave, shi ne mai jimlar kadaici. </td> </tr><tr> <th> 150_data </th>
+  <td> da zarar a cikin cave, yana da duka kadaici. </td> </tr>
+</table>
+ <br/><button onclick="showhide('074_latex')">Show/Hide LaTeX</button> <br/><pre id="074_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & a hakika akwai matukar wahalar gano \textlessem\textgreaterwajen\textless/em\textgreater ko ma ka \textlessem\textgreateridan\textless/em\textgreater ka san ya kasance. \textlessem\textgreaterkana\textless/em\textgreater shiga cikin kogon zaka \textlessem\textgreaterji\textless/em\textgreater kadaita ta \textlessem\textgreaterkama\textless/em\textgreater ka. \\
+100_data & da zarar an kasance a cikin cave, shi ne mai jimlar kadaici. \\
+150_data & da zarar a cikin cave, yana da duka kadaici. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table074}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> wasu <em>wuraren</em> suna ba da kayan <em>sha</em> na barasa a gidan. sai <em>dai</em> kuma, maye toshe tunani, kuma duk &#409;wararrun <em>&#8216;yan</em> caca sun san mahimmancin <em>kasancewa</em> ba cikin maye ba. </td> </tr><tr> <th> 100_data </th>
+  <td> duk da haka, drunkenness impadgement, da kuma duk mai kyau gamblers san muhimmancin staying sober. </td> </tr><tr> <th> 150_data </th>
+  <td> duk da haka, drunkenness impation judgement, da kuma duk mai kyau gamblers san muhimmancin kwanciyar hankali. </td> </tr>
+</table>
+ <br/><button onclick="showhide('075_latex')">Show/Hide LaTeX</button> <br/><pre id="075_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & wasu \textlessem\textgreaterwuraren\textless/em\textgreater suna ba da kayan \textlessem\textgreatersha\textless/em\textgreater na barasa a gidan. sai \textlessem\textgreaterdai\textless/em\textgreater kuma, maye toshe tunani, kuma duk &#409;wararrun \textlessem\textgreater&#8216;yan\textless/em\textgreater caca sun san mahimmancin \textlessem\textgreaterkasancewa\textless/em\textgreater ba cikin maye ba. \\
+100_data & duk da haka, drunkenness impadgement, da kuma duk mai kyau gamblers san muhimmancin staying sober. \\
+150_data & duk da haka, drunkenness impation judgement, da kuma duk mai kyau gamblers san muhimmancin kwanciyar hankali. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table075}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> ofishin <em>gabatar</em> da &#409;ararraki, wanda ke da alhakin <em>gabatar</em> da tuhuma, ya <em>bayyana</em> wa <em>&#8216;yan</em> jarida cewa ba shi da wani bayani da zai kara har sai bayan an karbi shigar da karar. </td> </tr><tr> <th> 100_data </th>
+  <td> crown ofishin, wanda yake shi ne a cikin overall cajin aiki, ya nuna wa jarida cewa babu kara comment za a yi a kalla har sai nuna alama. </td> </tr><tr> <th> 150_data </th>
+  <td> crown ofishin, wanda yake a overall cajin na tabbatarwa, ya nuna wa kwararru cewa babu karin comment za a yi a kalla har indiya. </td> </tr>
+</table>
+ <br/><button onclick="showhide('076_latex')">Show/Hide LaTeX</button> <br/><pre id="076_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & ofishin \textlessem\textgreatergabatar\textless/em\textgreater da &#409;ararraki, wanda ke da alhakin \textlessem\textgreatergabatar\textless/em\textgreater da tuhuma, ya \textlessem\textgreaterbayyana\textless/em\textgreater wa \textlessem\textgreater&#8216;yan\textless/em\textgreater jarida cewa ba shi da wani bayani da zai kara har sai bayan an karbi shigar da karar. \\
+100_data & crown ofishin, wanda yake shi ne a cikin overall cajin aiki, ya nuna wa jarida cewa babu kara comment za a yi a kalla har sai nuna alama. \\
+150_data & crown ofishin, wanda yake a overall cajin na tabbatarwa, ya nuna wa kwararru cewa babu karin comment za a yi a kalla har indiya. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table076}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> girgizar <em>kasar</em> ta <em>fi</em> kamari ne a <em>tsakanin</em> kilomita 20 (wato mil 15) a <em>arewacin</em> arewa maso gabas da kuma kimanin kilomita 65 (wato mil 40) kudu da buttle. </td> </tr><tr> <th> 100_data </th>
+  <td> an cire duniya game da 20 km (15) north-arewa na tsawo, kuma game da 65 km (40 miles) kudu na butte. </td> </tr><tr> <th> 150_data </th>
+  <td> an shigar da duniya kimanin kilomita 20 (madara 15) arewa maso yammacin arewa na tsawo, kuma kusan kilomita 65 (40) kudu maso yamma. </td> </tr>
+</table>
+ <br/><button onclick="showhide('077_latex')">Show/Hide LaTeX</button> <br/><pre id="077_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & girgizar \textlessem\textgreaterkasar\textless/em\textgreater ta \textlessem\textgreaterfi\textless/em\textgreater kamari ne a \textlessem\textgreatertsakanin\textless/em\textgreater kilomita 20 (wato mil 15) a \textlessem\textgreaterarewacin\textless/em\textgreater arewa maso gabas da kuma kimanin kilomita 65 (wato mil 40) kudu da buttle. \\
+100_data & an cire duniya game da 20 km (15) north-arewa na tsawo, kuma game da 65 km (40 miles) kudu na butte. \\
+150_data & an shigar da duniya kimanin kilomita 20 (madara 15) arewa maso yammacin arewa na tsawo, kuma kusan kilomita 65 (40) kudu maso yamma. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table077}
+\end{table}</pre><a name="bucket6"/><h3> Examples for Bucket [10,100) </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>shi</em> <em>ne</em> cep matelly na biyar <em>cikin</em> shekara hudu. </td> </tr><tr> <th> 100_data </th>
+  <td> <em>shi</em> <em>ne</em> martelly's biyar na fth a <em>cikin</em> shekaru hudu. </td> </tr><tr> <th> 150_data </th>
+  <td> yana da martell's na biyar a <em>cikin</em> shekaru hudu. </td> </tr>
+</table>
+ <br/><button onclick="showhide('078_latex')">Show/Hide LaTeX</button> <br/><pre id="078_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreatershi\textless/em\textgreater \textlessem\textgreaterne\textless/em\textgreater cep matelly na biyar \textlessem\textgreatercikin\textless/em\textgreater shekara hudu. \\
+100_data & \textlessem\textgreatershi\textless/em\textgreater \textlessem\textgreaterne\textless/em\textgreater martelly's biyar na fth a \textlessem\textgreatercikin\textless/em\textgreater shekaru hudu. \\
+150_data & yana da martell's na biyar a \textlessem\textgreatercikin\textless/em\textgreater shekaru hudu. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table078}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> mrs. kirchner <em>ta</em> bayyana ra&#8217;niyyarta <em>ta</em> tsayawa takarar shugabanci a gidan wasannin argentina, wurin da <em>ta</em> <em>yi</em> <em>amfani</em> da <em>shi</em> <em>domin</em> <em>fara</em> kanfen &#599;inta na takarar majalisar dattawa a shekarar 2005 a matsayinta na wakiliyar buenos aires. </td> </tr><tr> <th> 100_data </th>
+  <td> mrs. kirkirchner ya sanar da ita a gudanar <em>domin</em> shugaban kasa a argentine theat, wannan wuri ya <em>yi</em> <em>amfani</em> da su <em>fara</em> <em>ta</em> 2005 ga yakin neman mambobin majalisar dinkin duniya. </td> </tr><tr> <th> 150_data </th>
+  <td> shugaban kasa muhammadu buhari ya bayyana hakan ne a lokacin da yake zantawa da manema labarai a matsayin mataimakin shugaban kasa muhammadu buhari na jam&#8217;iyyar all progressives congress (apc) a shekarar 2015. </td> </tr>
+</table>
+ <br/><button onclick="showhide('079_latex')">Show/Hide LaTeX</button> <br/><pre id="079_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & mrs. kirchner \textlessem\textgreaterta\textless/em\textgreater bayyana ra&#8217;niyyarta \textlessem\textgreaterta\textless/em\textgreater tsayawa takarar shugabanci a gidan wasannin argentina, wurin da \textlessem\textgreaterta\textless/em\textgreater \textlessem\textgreateryi\textless/em\textgreater \textlessem\textgreateramfani\textless/em\textgreater da \textlessem\textgreatershi\textless/em\textgreater \textlessem\textgreaterdomin\textless/em\textgreater \textlessem\textgreaterfara\textless/em\textgreater kanfen &#599;inta na takarar majalisar dattawa a shekarar 2005 a matsayinta na wakiliyar buenos aires. \\
+100_data & mrs. kirkirchner ya sanar da ita a gudanar \textlessem\textgreaterdomin\textless/em\textgreater shugaban kasa a argentine theat, wannan wuri ya \textlessem\textgreateryi\textless/em\textgreater \textlessem\textgreateramfani\textless/em\textgreater da su \textlessem\textgreaterfara\textless/em\textgreater \textlessem\textgreaterta\textless/em\textgreater 2005 ga yakin neman mambobin majalisar dinkin duniya. \\
+150_data & shugaban kasa muhammadu buhari ya bayyana hakan ne a lokacin da yake zantawa da manema labarai a matsayin mataimakin shugaban kasa muhammadu buhari na jam&#8217;iyyar all progressives congress (apc) a shekarar 2015. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table079}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> d k arya, mataimakin sufeto janar ya ce, &#8220;mun kama <em>mutane</em> biyar da <em>suka</em> <em>yi</em> <em>wa</em> yar kasar switzerland fyade <em>kuma</em> <em>an</em> gano wayarta <em>ta</em> hannu da kwamfutar taa </td> </tr><tr> <th> 100_data </th>
+  <td> shugaban kasa muhammadu buhari ya bayyana hakan ne a lokacin da yake jawabi wajen yaki da cutar coronavirus/covid-19 a najeriya. </td> </tr><tr> <th> 150_data </th>
+  <td> mataimakin shugaban janar d d arya ya ce, "mun kama <em>mutane</em> biyar da <em>suka</em> rage matar swiss da <em>kuma</em> sake rufe <em>ta</em> hannu da kwamfutar tafi-da-gidanka". </td> </tr>
+</table>
+ <br/><button onclick="showhide('080_latex')">Show/Hide LaTeX</button> <br/><pre id="080_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & d k arya, mataimakin sufeto janar ya ce, &#8220;mun kama \textlessem\textgreatermutane\textless/em\textgreater biyar da \textlessem\textgreatersuka\textless/em\textgreater \textlessem\textgreateryi\textless/em\textgreater \textlessem\textgreaterwa\textless/em\textgreater yar kasar switzerland fyade \textlessem\textgreaterkuma\textless/em\textgreater \textlessem\textgreateran\textless/em\textgreater gano wayarta \textlessem\textgreaterta\textless/em\textgreater hannu da kwamfutar taa \\
+100_data & shugaban kasa muhammadu buhari ya bayyana hakan ne a lokacin da yake jawabi wajen yaki da cutar coronavirus/covid-19 a najeriya. \\
+150_data & mataimakin shugaban janar d d arya ya ce, "mun kama \textlessem\textgreatermutane\textless/em\textgreater biyar da \textlessem\textgreatersuka\textless/em\textgreater rage matar swiss da \textlessem\textgreaterkuma\textless/em\textgreater sake rufe \textlessem\textgreaterta\textless/em\textgreater hannu da kwamfutar tafi-da-gidanka". \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table080}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> a ranar litinin, sara danius, sakatariyar dindindin <em>ta</em> kwamitin adabi na kungiyar nagartattu a kwalejin nazarin sweden, <em>ta</em> sanar a bainar jama'a yayin <em>wani</em> shirin rediyo a sveriges radio a sweden kwamitin, <em>ba</em> <em>zai</em> <em>iya</em> kaiwa <em>ga</em> bob dylan kai tsaye <em>ba</em> game da lashe kyautar nobel <em>ta</em> 2016 a adabi, <em>ta</em> <em>yi</em> watsi da ita kokarinta na isa gare shi. </td> </tr><tr> <th> 100_data </th>
+  <td> a ranar litinin, sara danius, m sakataren kwamitin kwamitin na sanarwar a swedish academy, wallafa sanarwa a lokacin rediyo a rediyo shirin rediyo a kan rediyo rediyo a sweden sharhi, unable <em>iya</em> isa kai tsaye game da lashe kyautar lashe 2016 kyautar a uliter, kuma, yana da kuma. </td> </tr><tr> <th> 150_data </th>
+  <td> a ranar litinin, sara danius, m sakataren kwamitin sanarwar a sweden academy, wallafa <em>ta</em> sanar a lokacin <em>wani</em> rediyo shirin a rediyo rediyo a sweden a sweden kwamitin, <em>ba</em> <em>zai</em> <em>iya</em> kai <em>ga</em> iyakokin kai tsaye game da lashe kyautar 2016 nobel a literature, ya <em>yi</em> watsi da kokarinsa don isa masa. </td> </tr>
+</table>
+ <br/><button onclick="showhide('081_latex')">Show/Hide LaTeX</button> <br/><pre id="081_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & a ranar litinin, sara danius, sakatariyar dindindin \textlessem\textgreaterta\textless/em\textgreater kwamitin adabi na kungiyar nagartattu a kwalejin nazarin sweden, \textlessem\textgreaterta\textless/em\textgreater sanar a bainar jama'a yayin \textlessem\textgreaterwani\textless/em\textgreater shirin rediyo a sveriges radio a sweden kwamitin, \textlessem\textgreaterba\textless/em\textgreater \textlessem\textgreaterzai\textless/em\textgreater \textlessem\textgreateriya\textless/em\textgreater kaiwa \textlessem\textgreaterga\textless/em\textgreater bob dylan kai tsaye \textlessem\textgreaterba\textless/em\textgreater game da lashe kyautar nobel \textlessem\textgreaterta\textless/em\textgreater 2016 a adabi, \textlessem\textgreaterta\textless/em\textgreater \textlessem\textgreateryi\textless/em\textgreater watsi da ita kokarinta na isa gare shi. \\
+100_data & a ranar litinin, sara danius, m sakataren kwamitin kwamitin na sanarwar a swedish academy, wallafa sanarwa a lokacin rediyo a rediyo shirin rediyo a kan rediyo rediyo a sweden sharhi, unable \textlessem\textgreateriya\textless/em\textgreater isa kai tsaye game da lashe kyautar lashe 2016 kyautar a uliter, kuma, yana da kuma. \\
+150_data & a ranar litinin, sara danius, m sakataren kwamitin sanarwar a sweden academy, wallafa \textlessem\textgreaterta\textless/em\textgreater sanar a lokacin \textlessem\textgreaterwani\textless/em\textgreater rediyo shirin a rediyo rediyo a sweden a sweden kwamitin, \textlessem\textgreaterba\textless/em\textgreater \textlessem\textgreaterzai\textless/em\textgreater \textlessem\textgreateriya\textless/em\textgreater kai \textlessem\textgreaterga\textless/em\textgreater iyakokin kai tsaye game da lashe kyautar 2016 nobel a literature, ya \textlessem\textgreateryi\textless/em\textgreater watsi da kokarinsa don isa masa. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table081}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> karafan gami <em>ne</em> na &#409;arafa <em>biyu</em> <em>ko</em> fiye da haka. kar a manta <em>cewa</em> <em>akwai</em> abubuwa da yawa a <em>kan</em> jadawali na lokaci-lokaci. </td> </tr><tr> <th> 100_data </th>
+  <td> gami <em>ne</em> m cakuda <em>biyu</em> <em>ko</em> fiye da karafa. kada ka manta <em>cewa</em> <em>akwai</em> abubuwa da yawa a <em>kan</em> lokacin lokaci. </td> </tr><tr> <th> 150_data </th>
+  <td> kada ka manta <em>cewa</em> <em>akwai</em> abubuwa da yawa a <em>kan</em> lokaci-lokaci. </td> </tr>
+</table>
+ <br/><button onclick="showhide('082_latex')">Show/Hide LaTeX</button> <br/><pre id="082_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & karafan gami \textlessem\textgreaterne\textless/em\textgreater na &#409;arafa \textlessem\textgreaterbiyu\textless/em\textgreater \textlessem\textgreaterko\textless/em\textgreater fiye da haka. kar a manta \textlessem\textgreatercewa\textless/em\textgreater \textlessem\textgreaterakwai\textless/em\textgreater abubuwa da yawa a \textlessem\textgreaterkan\textless/em\textgreater jadawali na lokaci-lokaci. \\
+100_data & gami \textlessem\textgreaterne\textless/em\textgreater m cakuda \textlessem\textgreaterbiyu\textless/em\textgreater \textlessem\textgreaterko\textless/em\textgreater fiye da karafa. kada ka manta \textlessem\textgreatercewa\textless/em\textgreater \textlessem\textgreaterakwai\textless/em\textgreater abubuwa da yawa a \textlessem\textgreaterkan\textless/em\textgreater lokacin lokaci. \\
+150_data & kada ka manta \textlessem\textgreatercewa\textless/em\textgreater \textlessem\textgreaterakwai\textless/em\textgreater abubuwa da yawa a \textlessem\textgreaterkan\textless/em\textgreater lokaci-lokaci. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table082}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>za</em> <em>ka</em> <em>iya</em> ganin dalar a <em>cikin</em> duhu <em>kuma</em> <em>za</em> <em>ka</em> <em>iya</em> ganin <em>su</em> a tsanake kafin shirin ya fara. </td> </tr><tr> <th> 100_data </th>
+  <td> <em>za</em> <em>ka</em> <em>iya</em> ganin pyramids a <em>cikin</em> duhu <em>kuma</em> <em>za</em> <em>ka</em> <em>iya</em> ganin <em>su</em> a cikin azurfa kafin nuna farkon. </td> </tr><tr> <th> 150_data </th>
+  <td> <em>za</em> <em>ka</em> <em>iya</em> ganin pyramids a <em>cikin</em> duhu <em>kuma</em> <em>za</em> <em>ka</em> <em>iya</em> ganin <em>su</em> a shiru kafin nuna farkon. </td> </tr>
+</table>
+ <br/><button onclick="showhide('083_latex')">Show/Hide LaTeX</button> <br/><pre id="083_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterza\textless/em\textgreater \textlessem\textgreaterka\textless/em\textgreater \textlessem\textgreateriya\textless/em\textgreater ganin dalar a \textlessem\textgreatercikin\textless/em\textgreater duhu \textlessem\textgreaterkuma\textless/em\textgreater \textlessem\textgreaterza\textless/em\textgreater \textlessem\textgreaterka\textless/em\textgreater \textlessem\textgreateriya\textless/em\textgreater ganin \textlessem\textgreatersu\textless/em\textgreater a tsanake kafin shirin ya fara. \\
+100_data & \textlessem\textgreaterza\textless/em\textgreater \textlessem\textgreaterka\textless/em\textgreater \textlessem\textgreateriya\textless/em\textgreater ganin pyramids a \textlessem\textgreatercikin\textless/em\textgreater duhu \textlessem\textgreaterkuma\textless/em\textgreater \textlessem\textgreaterza\textless/em\textgreater \textlessem\textgreaterka\textless/em\textgreater \textlessem\textgreateriya\textless/em\textgreater ganin \textlessem\textgreatersu\textless/em\textgreater a cikin azurfa kafin nuna farkon. \\
+150_data & \textlessem\textgreaterza\textless/em\textgreater \textlessem\textgreaterka\textless/em\textgreater \textlessem\textgreateriya\textless/em\textgreater ganin pyramids a \textlessem\textgreatercikin\textless/em\textgreater duhu \textlessem\textgreaterkuma\textless/em\textgreater \textlessem\textgreaterza\textless/em\textgreater \textlessem\textgreaterka\textless/em\textgreater \textlessem\textgreateriya\textless/em\textgreater ganin \textlessem\textgreatersu\textless/em\textgreater a shiru kafin nuna farkon. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table083}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> irin <em>wannan</em> manajan <em>yana</em> da wahalar yanke shawara mara kyau, aiwatar da ladabtarwa, kimanta aikin aiki, sanya nauyi, da &#599;aukar <em>mutane</em> da alhaki. </td> </tr><tr> <th> 100_data </th>
+  <td> <em>wannan</em> irin manaja <em>yana</em> da wahala yin m yanke shawara yanke shawara, yin tarbiyya, yi kimantawa, sanya hannu amsawa, kuma rike <em>mutane</em> asusun. </td> </tr><tr> <th> 150_data </th>
+  <td> <em>wannan</em> irin manajan <em>yana</em> da wahala yin m yanke shawara, yin disciplinary mataki, yi kimantawa, asning amsa, da rike <em>mutane</em> accountable. </td> </tr>
+</table>
+ <br/><button onclick="showhide('084_latex')">Show/Hide LaTeX</button> <br/><pre id="084_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & irin \textlessem\textgreaterwannan\textless/em\textgreater manajan \textlessem\textgreateryana\textless/em\textgreater da wahalar yanke shawara mara kyau, aiwatar da ladabtarwa, kimanta aikin aiki, sanya nauyi, da &#599;aukar \textlessem\textgreatermutane\textless/em\textgreater da alhaki. \\
+100_data & \textlessem\textgreaterwannan\textless/em\textgreater irin manaja \textlessem\textgreateryana\textless/em\textgreater da wahala yin m yanke shawara yanke shawara, yin tarbiyya, yi kimantawa, sanya hannu amsawa, kuma rike \textlessem\textgreatermutane\textless/em\textgreater asusun. \\
+150_data & \textlessem\textgreaterwannan\textless/em\textgreater irin manajan \textlessem\textgreateryana\textless/em\textgreater da wahala yin m yanke shawara, yin disciplinary mataki, yi kimantawa, asning amsa, da rike \textlessem\textgreatermutane\textless/em\textgreater accountable. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table084}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> sautin dala da wasan haske na daya <em>daga</em> <em>cikin</em> abubuwa <em>masu</em> dadi a fanni kananan yara. </td> </tr><tr> <th> 100_data </th>
+  <td> sautin pyramid da haske yana daya <em>daga</em> <em>cikin</em> abubuwa <em>masu</em> ban sha'awa a yankin don kids. </td> </tr><tr> <th> 150_data </th>
+  <td> sautin pyramid da haske yana daya <em>daga</em> <em>cikin</em> abubuwa <em>masu</em> ban sha'awa a yankin don yara. </td> </tr>
+</table>
+ <br/><button onclick="showhide('085_latex')">Show/Hide LaTeX</button> <br/><pre id="085_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & sautin dala da wasan haske na daya \textlessem\textgreaterdaga\textless/em\textgreater \textlessem\textgreatercikin\textless/em\textgreater abubuwa \textlessem\textgreatermasu\textless/em\textgreater dadi a fanni kananan yara. \\
+100_data & sautin pyramid da haske yana daya \textlessem\textgreaterdaga\textless/em\textgreater \textlessem\textgreatercikin\textless/em\textgreater abubuwa \textlessem\textgreatermasu\textless/em\textgreater ban sha'awa a yankin don kids. \\
+150_data & sautin pyramid da haske yana daya \textlessem\textgreaterdaga\textless/em\textgreater \textlessem\textgreatercikin\textless/em\textgreater abubuwa \textlessem\textgreatermasu\textless/em\textgreater ban sha'awa a yankin don yara. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table085}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> mun fahimci <em>tsarin</em> kulawa na jarirai ya <em>zama</em> yankin aminci <em>ga</em> wa&#599;annan yara. </td> </tr><tr> <th> 100_data </th>
+  <td> mun gane da foster kula da <em>tsarin</em> <em>zama</em> wani aminci zone <em>ga</em> wadannan yara. </td> </tr><tr> <th> 150_data </th>
+  <td> mun gane da foster kula da <em>tsarin</em> <em>zama</em> mai aminci zone <em>ga</em> wadannan yara. </td> </tr>
+</table>
+ <br/><button onclick="showhide('086_latex')">Show/Hide LaTeX</button> <br/><pre id="086_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & mun fahimci \textlessem\textgreatertsarin\textless/em\textgreater kulawa na jarirai ya \textlessem\textgreaterzama\textless/em\textgreater yankin aminci \textlessem\textgreaterga\textless/em\textgreater wa&#599;annan yara. \\
+100_data & mun gane da foster kula da \textlessem\textgreatertsarin\textless/em\textgreater \textlessem\textgreaterzama\textless/em\textgreater wani aminci zone \textlessem\textgreaterga\textless/em\textgreater wadannan yara. \\
+150_data & mun gane da foster kula da \textlessem\textgreatertsarin\textless/em\textgreater \textlessem\textgreaterzama\textless/em\textgreater mai aminci zone \textlessem\textgreaterga\textless/em\textgreater wadannan yara. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table086}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> <em>babban</em> alwatikan a giza shine kawai &#599;ayan abubuwan al'ajabi bakwai da <em>har</em> yanzu suke tsaye a yau. </td> </tr><tr> <th> 100_data </th>
+  <td> <em>babban</em> pyramid a giza ne kawai daya daga cikin bakwai abubuwan al'ajabi wanda <em>har</em> yanzu yana tsaye a yau. </td> </tr><tr> <th> 150_data </th>
+  <td> <em>babban</em> pyramid a giza ne kawai daya daga cikin bakwai abubuwan al'ajabi da suke <em>har</em> yanzu tsaye a yau. </td> </tr>
+</table>
+ <br/><button onclick="showhide('087_latex')">Show/Hide LaTeX</button> <br/><pre id="087_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & \textlessem\textgreaterbabban\textless/em\textgreater alwatikan a giza shine kawai &#599;ayan abubuwan al'ajabi bakwai da \textlessem\textgreaterhar\textless/em\textgreater yanzu suke tsaye a yau. \\
+100_data & \textlessem\textgreaterbabban\textless/em\textgreater pyramid a giza ne kawai daya daga cikin bakwai abubuwan al'ajabi wanda \textlessem\textgreaterhar\textless/em\textgreater yanzu yana tsaye a yau. \\
+150_data & \textlessem\textgreaterbabban\textless/em\textgreater pyramid a giza ne kawai daya daga cikin bakwai abubuwan al'ajabi da suke \textlessem\textgreaterhar\textless/em\textgreater yanzu tsaye a yau. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table087}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> abokai <em>masu</em> nisa, <em>ba</em> <em>tare</em> da wayar tarho ba, wayar tauraron dan adam zata <em>iya</em> <em>zama</em> <em>mai</em> za&#595;ar. </td> </tr><tr> <th> 100_data </th>
+  <td> the mob na mutane tilasta sarki da sarauniya su da carriage windows fadi da bude. </td> </tr><tr> <th> 150_data </th>
+  <td> the mob na mutane tilasta sarki da sarauniya a yi su carriage windows fadi da bude. </td> </tr>
+</table>
+ <br/><button onclick="showhide('088_latex')">Show/Hide LaTeX</button> <br/><pre id="088_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & abokai \textlessem\textgreatermasu\textless/em\textgreater nisa, \textlessem\textgreaterba\textless/em\textgreater \textlessem\textgreatertare\textless/em\textgreater da wayar tarho ba, wayar tauraron dan adam zata \textlessem\textgreateriya\textless/em\textgreater \textlessem\textgreaterzama\textless/em\textgreater \textlessem\textgreatermai\textless/em\textgreater za&#595;ar. \\
+100_data & the mob na mutane tilasta sarki da sarauniya su da carriage windows fadi da bude. \\
+150_data & the mob na mutane tilasta sarki da sarauniya a yi su carriage windows fadi da bude. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table088}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> alamomin kayyade gudun ababen hawa <em>sun</em> <em>yi</em> karanci a nan fiye da a wuraren da <em>ke</em> baya - anfi samun wadanda <em>ba</em> sa wuce mph 35-40 (56-64 km/h) - biyayya <em>ga</em> alamomin na da mahimmanci maimakon rashin <em>yi</em> musu biyayya. </td> </tr><tr> <th> 100_data </th>
+  <td> posted gudun iyakoki suna da &#409;ananan fiye da m da kuma m sassan - fiye da 35-40 mph (56-64 km/ h) - kuma m biyayya su ne ma fiye da muhimmanci fiye da wasu. </td> </tr><tr> <th> 150_data </th>
+  <td> posted gudun iyaka ne m &#409;ananan fiye da a baya da kuma m sassan - fiye da 35-40 mph (56-64 km / h) - da kuma m biyayya su ne ko da muhimmanci fiye da wasu. </td> </tr>
+</table>
+ <br/><button onclick="showhide('089_latex')">Show/Hide LaTeX</button> <br/><pre id="089_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & alamomin kayyade gudun ababen hawa \textlessem\textgreatersun\textless/em\textgreater \textlessem\textgreateryi\textless/em\textgreater karanci a nan fiye da a wuraren da \textlessem\textgreaterke\textless/em\textgreater baya - anfi samun wadanda \textlessem\textgreaterba\textless/em\textgreater sa wuce mph 35-40 (56-64 km/h) - biyayya \textlessem\textgreaterga\textless/em\textgreater alamomin na da mahimmanci maimakon rashin \textlessem\textgreateryi\textless/em\textgreater musu biyayya. \\
+100_data & posted gudun iyakoki suna da &#409;ananan fiye da m da kuma m sassan - fiye da 35-40 mph (56-64 km/ h) - kuma m biyayya su ne ma fiye da muhimmanci fiye da wasu. \\
+150_data & posted gudun iyaka ne m &#409;ananan fiye da a baya da kuma m sassan - fiye da 35-40 mph (56-64 km / h) - da kuma m biyayya su ne ko da muhimmanci fiye da wasu. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table089}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> da farko, <em>yawancin</em> mahaya <em>suna</em> sanye da takalman hawa <em>masu</em> diddige da <em>kuma</em> &#409;asan takalmi <em>mai</em> santsi, matsattse. </td> </tr><tr> <th> 100_data </th>
+  <td> na farko, mafi yawan riders riding takalma da wani heel da santsi, quite kunkuntar, sole. </td> </tr><tr> <th> 150_data </th>
+  <td> da farko, mafi yawan mahaya sa riding takalma da wani heel da santsi, quite kunkunta, haka. </td> </tr>
+</table>
+ <br/><button onclick="showhide('090_latex')">Show/Hide LaTeX</button> <br/><pre id="090_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & da farko, \textlessem\textgreateryawancin\textless/em\textgreater mahaya \textlessem\textgreatersuna\textless/em\textgreater sanye da takalman hawa \textlessem\textgreatermasu\textless/em\textgreater diddige da \textlessem\textgreaterkuma\textless/em\textgreater &#409;asan takalmi \textlessem\textgreatermai\textless/em\textgreater santsi, matsattse. \\
+100_data & na farko, mafi yawan riders riding takalma da wani heel da santsi, quite kunkuntar, sole. \\
+150_data & da farko, mafi yawan mahaya sa riding takalma da wani heel da santsi, quite kunkunta, haka. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table090}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> rage tashin hankali, <em>haka</em> <em>kuma</em> yawan fata na gari da karfin rayuwa <em>zai</em> gabatar. <em>ko</em> <em>wani</em> mutum na da damar samun kwanciyar hankali da gamsuwa. </td> </tr><tr> <th> 100_data </th>
+  <td> a &#409;ananan tension, mafi kyau tabbatacce rayuwar karfi gaba. kowane mutum yana da m ga samun cikakken zaman lafiya da abun ciki. </td> </tr><tr> <th> 150_data </th>
+  <td> kowane mutum yana da damar samun cikakkiyar zaman lafiya da abun ciki. </td> </tr>
+</table>
+ <br/><button onclick="showhide('091_latex')">Show/Hide LaTeX</button> <br/><pre id="091_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & rage tashin hankali, \textlessem\textgreaterhaka\textless/em\textgreater \textlessem\textgreaterkuma\textless/em\textgreater yawan fata na gari da karfin rayuwa \textlessem\textgreaterzai\textless/em\textgreater gabatar. \textlessem\textgreaterko\textless/em\textgreater \textlessem\textgreaterwani\textless/em\textgreater mutum na da damar samun kwanciyar hankali da gamsuwa. \\
+100_data & a &#409;ananan tension, mafi kyau tabbatacce rayuwar karfi gaba. kowane mutum yana da m ga samun cikakken zaman lafiya da abun ciki. \\
+150_data & kowane mutum yana da damar samun cikakkiyar zaman lafiya da abun ciki. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table091}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> rahotanni <em>sun</em> <em>nuna</em> <em>an</em> kwashe tsawon daren <em>ana</em> wasoson <em>kayan</em> jama&#8217;a, sakamakon rashin jami&#8217;an tsaro a titunan bishkek. </td> </tr><tr> <th> 100_data </th>
+  <td> ambaliyar ruwa ta hanyar ci gaba da bunkasa tattalin arziki, kamar yadda dokar jami'an ba su gabatar a kan titin bishkeke. </td> </tr><tr> <th> 150_data </th>
+  <td> widespread duba rahotanni ci gaba da dare, kamar yadda doka ta &#409;arfafa jami'an ba su da yarjejeniyar bishkek ba. </td> </tr>
+</table>
+ <br/><button onclick="showhide('092_latex')">Show/Hide LaTeX</button> <br/><pre id="092_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & rahotanni \textlessem\textgreatersun\textless/em\textgreater \textlessem\textgreaternuna\textless/em\textgreater \textlessem\textgreateran\textless/em\textgreater kwashe tsawon daren \textlessem\textgreaterana\textless/em\textgreater wasoson \textlessem\textgreaterkayan\textless/em\textgreater jama&#8217;a, sakamakon rashin jami&#8217;an tsaro a titunan bishkek. \\
+100_data & ambaliyar ruwa ta hanyar ci gaba da bunkasa tattalin arziki, kamar yadda dokar jami'an ba su gabatar a kan titin bishkeke. \\
+150_data & widespread duba rahotanni ci gaba da dare, kamar yadda doka ta &#409;arfafa jami'an ba su da yarjejeniyar bishkek ba. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table092}
+\end{table}</pre><a name="bucket7"/><h3> Examples for Bucket [100,1000) </h3><h4> Examples where some systems were good, some were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> rahotannin talabijin sun nuna farin hayaki <em>na</em> fitowa daga shukar. </td> </tr><tr> <th> 100_data </th>
+  <td> talabijin rahotanni sun nuna farin hayaki daga shuka. </td> </tr><tr> <th> 150_data </th>
+  <td> talabijin <em>na</em> talabijin ya nuna farin hayaki daga shuka. </td> </tr>
+</table>
+ <br/><button onclick="showhide('093_latex')">Show/Hide LaTeX</button> <br/><pre id="093_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & rahotannin talabijin sun nuna farin hayaki \textlessem\textgreaterna\textless/em\textgreater fitowa daga shukar. \\
+100_data & talabijin rahotanni sun nuna farin hayaki daga shuka. \\
+150_data & talabijin \textlessem\textgreaterna\textless/em\textgreater talabijin ya nuna farin hayaki daga shuka. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table093}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> rahotanni sun nuna an kwashe tsawon daren ana wasoson kayan jama&#8217;a, sakamakon rashin jami&#8217;an tsaro <em>a</em> titunan bishkek. </td> </tr><tr> <th> 100_data </th>
+  <td> ambaliyar ruwa ta hanyar ci gaba da bunkasa tattalin arziki, kamar yadda dokar jami'an ba su gabatar <em>a</em> kan titin bishkeke. </td> </tr><tr> <th> 150_data </th>
+  <td> widespread duba rahotanni ci gaba da dare, kamar yadda doka ta &#409;arfafa jami'an ba su da yarjejeniyar bishkek ba. </td> </tr>
+</table>
+ <br/><button onclick="showhide('094_latex')">Show/Hide LaTeX</button> <br/><pre id="094_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & rahotanni sun nuna an kwashe tsawon daren ana wasoson kayan jama&#8217;a, sakamakon rashin jami&#8217;an tsaro \textlessem\textgreatera\textless/em\textgreater titunan bishkek. \\
+100_data & ambaliyar ruwa ta hanyar ci gaba da bunkasa tattalin arziki, kamar yadda dokar jami'an ba su gabatar \textlessem\textgreatera\textless/em\textgreater kan titin bishkeke. \\
+150_data & widespread duba rahotanni ci gaba da dare, kamar yadda doka ta &#409;arfafa jami'an ba su da yarjejeniyar bishkek ba. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table094}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> ruwan famfon <em>na</em> gida yana <em>da</em> cikakkiyar tsabta don sha, amma ruwan kwalba <em>na</em> <em>da</em> saukin samu idan kana fargaba. </td> </tr><tr> <th> 100_data </th>
+  <td> the gida tap ruwa ne daidai lafiya to drink, amma kwalba ruwa ne sauki don samun idan kana fearful. </td> </tr><tr> <th> 150_data </th>
+  <td> ruwa <em>na</em> gida yana daidai <em>da</em> lafiya don bushewa, amma ruwan kwalba yana <em>da</em> sau&#409;in samun idan kuna da tsoro. </td> </tr>
+</table>
+ <br/><button onclick="showhide('095_latex')">Show/Hide LaTeX</button> <br/><pre id="095_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & ruwan famfon \textlessem\textgreaterna\textless/em\textgreater gida yana \textlessem\textgreaterda\textless/em\textgreater cikakkiyar tsabta don sha, amma ruwan kwalba \textlessem\textgreaterna\textless/em\textgreater \textlessem\textgreaterda\textless/em\textgreater saukin samu idan kana fargaba. \\
+100_data & the gida tap ruwa ne daidai lafiya to drink, amma kwalba ruwa ne sauki don samun idan kana fearful. \\
+150_data & ruwa \textlessem\textgreaterna\textless/em\textgreater gida yana daidai \textlessem\textgreaterda\textless/em\textgreater lafiya don bushewa, amma ruwan kwalba yana \textlessem\textgreaterda\textless/em\textgreater sau&#409;in samun idan kuna da tsoro. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table095}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> babban jami'in shirin rufe jirgin nasa, n. wayne hale jr. <em>ya</em> ce kumburin <em>ya</em> fadi &#8220;bayan lokacin <em>da</em> muke damuwa.&#8221; </td> </tr><tr> <th> 100_data </th>
+  <td> shugaban kasa muhammadu buhari <em>ya</em> bayyana hakan ne a ranar laraba. </td> </tr><tr> <th> 150_data </th>
+  <td> shugaban shirin nasa, n. wayne hale jr. <em>ya</em> ce kumfa <em>ya</em> auku "bayan lokacin <em>da</em> muke damuwa game da fita." </td> </tr>
+</table>
+ <br/><button onclick="showhide('096_latex')">Show/Hide LaTeX</button> <br/><pre id="096_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & babban jami'in shirin rufe jirgin nasa, n. wayne hale jr. \textlessem\textgreaterya\textless/em\textgreater ce kumburin \textlessem\textgreaterya\textless/em\textgreater fadi &#8220;bayan lokacin \textlessem\textgreaterda\textless/em\textgreater muke damuwa.&#8221; \\
+100_data & shugaban kasa muhammadu buhari \textlessem\textgreaterya\textless/em\textgreater bayyana hakan ne a ranar laraba. \\
+150_data & shugaban shirin nasa, n. wayne hale jr. \textlessem\textgreaterya\textless/em\textgreater ce kumfa \textlessem\textgreaterya\textless/em\textgreater auku "bayan lokacin \textlessem\textgreaterda\textless/em\textgreater muke damuwa game da fita." \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table096}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> aikin shi yana <em>da</em> shaidan inganci <em>da</em> bayanin filla-filla har yana daya daga kadan daga sanannu cikin philatelists. wasu sun kore <em>a</em> karban ayukansa kadai. </td> </tr><tr> <th> 100_data </th>
+  <td> aikinsa yana <em>da</em> irin wannan gane inganci <em>da</em> daki-daki, cewa shi ne daya daga cikin 'yan sunayen "iyali sunaye" tsakanin philatelists. wasu kwarewa <em>a</em> tattara aikinsa. </td> </tr><tr> <th> 150_data </th>
+  <td> ya aiki ne na irin wannan gane inganci <em>da</em> daki-daki, cewa shi ne daya daga cikin 'yan "iyali names" tsakanin philatelists. </td> </tr>
+</table>
+ <br/><button onclick="showhide('097_latex')">Show/Hide LaTeX</button> <br/><pre id="097_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & aikin shi yana \textlessem\textgreaterda\textless/em\textgreater shaidan inganci \textlessem\textgreaterda\textless/em\textgreater bayanin filla-filla har yana daya daga kadan daga sanannu cikin philatelists. wasu sun kore \textlessem\textgreatera\textless/em\textgreater karban ayukansa kadai. \\
+100_data & aikinsa yana \textlessem\textgreaterda\textless/em\textgreater irin wannan gane inganci \textlessem\textgreaterda\textless/em\textgreater daki-daki, cewa shi ne daya daga cikin 'yan sunayen "iyali sunaye" tsakanin philatelists. wasu kwarewa \textlessem\textgreatera\textless/em\textgreater tattara aikinsa. \\
+150_data & ya aiki ne na irin wannan gane inganci \textlessem\textgreaterda\textless/em\textgreater daki-daki, cewa shi ne daya daga cikin 'yan "iyali names" tsakanin philatelists. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table097}
+\end{table}</pre><h4> Examples where all systems were good </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> masuntan &#409;abilar berner su ne suka kafa sabon birnin casablanca <em>a</em> karni <em>na</em> 10 bce, kuma phoenicians, rumawa, <em>da</em> merenids sun yi amfani <em>da</em> shi <em>a</em> matsayin tashar jirgin ruwa mai amfani <em>da</em> ake kira anfa. </td> </tr><tr> <th> 100_data </th>
+  <td> birnin zamani <em>na</em> casablanca <em>da</em> aka kafa ta berfishermen <em>a</em> cikin 10th karni bce, kuma aka yi amfani <em>da</em> phoenicians, romans, <em>da</em> kuma m <em>a</em> matsayin dabarun tashar jiragen ruwa da ake kira anfafa. </td> </tr><tr> <th> 150_data </th>
+  <td> birnin <em>na</em> zamani na casablanca aka kafa ta berber fishermen <em>a</em> cikin 10th karni bce, kuma an yi amfani <em>da</em> phoenicians, romans, <em>da</em> merenids <em>a</em> matsayin dabarun tashar jiragen ruwa <em>da</em> ake kira anfa. </td> </tr>
+</table>
+ <br/><button onclick="showhide('098_latex')">Show/Hide LaTeX</button> <br/><pre id="098_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & masuntan &#409;abilar berner su ne suka kafa sabon birnin casablanca \textlessem\textgreatera\textless/em\textgreater karni \textlessem\textgreaterna\textless/em\textgreater 10 bce, kuma phoenicians, rumawa, \textlessem\textgreaterda\textless/em\textgreater merenids sun yi amfani \textlessem\textgreaterda\textless/em\textgreater shi \textlessem\textgreatera\textless/em\textgreater matsayin tashar jirgin ruwa mai amfani \textlessem\textgreaterda\textless/em\textgreater ake kira anfa. \\
+100_data & birnin zamani \textlessem\textgreaterna\textless/em\textgreater casablanca \textlessem\textgreaterda\textless/em\textgreater aka kafa ta berfishermen \textlessem\textgreatera\textless/em\textgreater cikin 10th karni bce, kuma aka yi amfani \textlessem\textgreaterda\textless/em\textgreater phoenicians, romans, \textlessem\textgreaterda\textless/em\textgreater kuma m \textlessem\textgreatera\textless/em\textgreater matsayin dabarun tashar jiragen ruwa da ake kira anfafa. \\
+150_data & birnin \textlessem\textgreaterna\textless/em\textgreater zamani na casablanca aka kafa ta berber fishermen \textlessem\textgreatera\textless/em\textgreater cikin 10th karni bce, kuma an yi amfani \textlessem\textgreaterda\textless/em\textgreater phoenicians, romans, \textlessem\textgreaterda\textless/em\textgreater merenids \textlessem\textgreatera\textless/em\textgreater matsayin dabarun tashar jiragen ruwa \textlessem\textgreaterda\textless/em\textgreater ake kira anfa. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table098}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> an tsara zai kai shekaru 40 masu zuwa kuma za ayi ya&#409;e shi <em>a</em> hakika,ta sojojin haya, <em>a</em> filayen ya&#409;i daga africa zuwa asia, <em>a</em> afghanistan, cuba <em>da</em> sauran wurare <em>da</em> dama. </td> </tr><tr> <th> 100_data </th>
+  <td> ya kasance <em>a</em> karshe na 40 shekaru <em>da</em> kuma za <em>a</em> nemi real, <em>da</em> proxy armies, <em>a</em> kan yawon shakatawa daga afrika zuwa asiya, a fannin anistan, cuba da kuma sauran wurare. </td> </tr><tr> <th> 150_data </th>
+  <td> <em>a</em> karshe na gaba shekaru 40 kuma za <em>a</em> yi ya&#409;i domin real, <em>da</em> proxy armies, <em>a</em> kan hare-hare daga afrika zuwa asiya, a birnin aniya, cuba <em>da</em> kuma sauran wurare. </td> </tr>
+</table>
+ <br/><button onclick="showhide('099_latex')">Show/Hide LaTeX</button> <br/><pre id="099_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & an tsara zai kai shekaru 40 masu zuwa kuma za ayi ya&#409;e shi \textlessem\textgreatera\textless/em\textgreater hakika,ta sojojin haya, \textlessem\textgreatera\textless/em\textgreater filayen ya&#409;i daga africa zuwa asia, \textlessem\textgreatera\textless/em\textgreater afghanistan, cuba \textlessem\textgreaterda\textless/em\textgreater sauran wurare \textlessem\textgreaterda\textless/em\textgreater dama. \\
+100_data & ya kasance \textlessem\textgreatera\textless/em\textgreater karshe na 40 shekaru \textlessem\textgreaterda\textless/em\textgreater kuma za \textlessem\textgreatera\textless/em\textgreater nemi real, \textlessem\textgreaterda\textless/em\textgreater proxy armies, \textlessem\textgreatera\textless/em\textgreater kan yawon shakatawa daga afrika zuwa asiya, a fannin anistan, cuba da kuma sauran wurare. \\
+150_data & \textlessem\textgreatera\textless/em\textgreater karshe na gaba shekaru 40 kuma za \textlessem\textgreatera\textless/em\textgreater yi ya&#409;i domin real, \textlessem\textgreaterda\textless/em\textgreater proxy armies, \textlessem\textgreatera\textless/em\textgreater kan hare-hare daga afrika zuwa asiya, a birnin aniya, cuba \textlessem\textgreaterda\textless/em\textgreater kuma sauran wurare. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table099}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> haka kuma zai iya zama <em>da</em> amfani ga mutum <em>ya</em> sayi kyanwar daji, wanda ke samar <em>da</em> wurin shiga ga ko dai za&#595;a&#595;&#595;un gandun dabbobi <em>a</em> afirka ta kudu ko kuma dukkan gandun dabbobi <em>na</em> afirka ta kudu. </td> </tr><tr> <th> 100_data </th>
+  <td> yana kuma iya zama <em>da</em> amfani ga daya saya <em>a</em> daji card, wanda <em>ya</em> samar <em>da</em> shigarwa ga ko dai zabi <em>na</em> parks a afrika ko duk na afrika ta kudu parks. </td> </tr><tr> <th> 150_data </th>
+  <td> hakanan yana iya zama <em>da</em> amfani ga daya saya <em>a</em> daji card, wanda <em>ya</em> samar <em>da</em> shigarwa zuwa ko dai zabe <em>na</em> parks a afrika ko duk na afirka ta kudu national parks. </td> </tr>
+</table>
+ <br/><button onclick="showhide('100_latex')">Show/Hide LaTeX</button> <br/><pre id="100_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & haka kuma zai iya zama \textlessem\textgreaterda\textless/em\textgreater amfani ga mutum \textlessem\textgreaterya\textless/em\textgreater sayi kyanwar daji, wanda ke samar \textlessem\textgreaterda\textless/em\textgreater wurin shiga ga ko dai za&#595;a&#595;&#595;un gandun dabbobi \textlessem\textgreatera\textless/em\textgreater afirka ta kudu ko kuma dukkan gandun dabbobi \textlessem\textgreaterna\textless/em\textgreater afirka ta kudu. \\
+100_data & yana kuma iya zama \textlessem\textgreaterda\textless/em\textgreater amfani ga daya saya \textlessem\textgreatera\textless/em\textgreater daji card, wanda \textlessem\textgreaterya\textless/em\textgreater samar \textlessem\textgreaterda\textless/em\textgreater shigarwa ga ko dai zabi \textlessem\textgreaterna\textless/em\textgreater parks a afrika ko duk na afrika ta kudu parks. \\
+150_data & hakanan yana iya zama \textlessem\textgreaterda\textless/em\textgreater amfani ga daya saya \textlessem\textgreatera\textless/em\textgreater daji card, wanda \textlessem\textgreaterya\textless/em\textgreater samar \textlessem\textgreaterda\textless/em\textgreater shigarwa zuwa ko dai zabe \textlessem\textgreaterna\textless/em\textgreater parks a afrika ko duk na afirka ta kudu national parks. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table100}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> an rufe duk makarantu goma sha hudu <em>a</em> huawaii wadanda suke kusa <em>da</em> bakin teku <em>a</em> ranar laraba duk <em>da</em> cewa an janye jan kunnen. </td> </tr><tr> <th> 100_data </th>
+  <td> goma sha goma makarantu <em>a</em> hawaii located <em>a</em> ko kusa <em>da</em> coastlines an rufe dukkan wednesday duk <em>da</em> gargajiya da ake kiyayewa. </td> </tr><tr> <th> 150_data </th>
+  <td> hudu makarantu <em>a</em> hawaii located <em>a</em> kan ko kusa coastlines aka rufe dukan larabawa duk <em>da</em> gargadi <em>da</em> ake lifted. </td> </tr>
+</table>
+ <br/><button onclick="showhide('101_latex')">Show/Hide LaTeX</button> <br/><pre id="101_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & an rufe duk makarantu goma sha hudu \textlessem\textgreatera\textless/em\textgreater huawaii wadanda suke kusa \textlessem\textgreaterda\textless/em\textgreater bakin teku \textlessem\textgreatera\textless/em\textgreater ranar laraba duk \textlessem\textgreaterda\textless/em\textgreater cewa an janye jan kunnen. \\
+100_data & goma sha goma makarantu \textlessem\textgreatera\textless/em\textgreater hawaii located \textlessem\textgreatera\textless/em\textgreater ko kusa \textlessem\textgreaterda\textless/em\textgreater coastlines an rufe dukkan wednesday duk \textlessem\textgreaterda\textless/em\textgreater gargajiya da ake kiyayewa. \\
+150_data & hudu makarantu \textlessem\textgreatera\textless/em\textgreater hawaii located \textlessem\textgreatera\textless/em\textgreater kan ko kusa coastlines aka rufe dukan larabawa duk \textlessem\textgreaterda\textless/em\textgreater gargadi \textlessem\textgreaterda\textless/em\textgreater ake lifted. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table101}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> ba <em>da</em> dadewa ba, jami'an <em>da</em> ke sanye <em>da</em> kayan aikin kwantar tarzoma suka shiga yankin sun kore yan fursunan <em>da</em> barkonon tsohuwa. </td> </tr><tr> <th> 100_data </th>
+  <td> saboda haka, jami'an sanye take <em>da</em> riot gear shiga yard <em>da</em> kuma gyara <em>da</em> 'yancin <em>da</em> tear gas. </td> </tr><tr> <th> 150_data </th>
+  <td> saboda haka, jami'an sanye take <em>da</em> m gear shigar <em>da</em> yard <em>da</em> kuma gyara abubuwan <em>da</em> ke tare da tear gas. </td> </tr>
+</table>
+ <br/><button onclick="showhide('102_latex')">Show/Hide LaTeX</button> <br/><pre id="102_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & ba \textlessem\textgreaterda\textless/em\textgreater dadewa ba, jami'an \textlessem\textgreaterda\textless/em\textgreater ke sanye \textlessem\textgreaterda\textless/em\textgreater kayan aikin kwantar tarzoma suka shiga yankin sun kore yan fursunan \textlessem\textgreaterda\textless/em\textgreater barkonon tsohuwa. \\
+100_data & saboda haka, jami'an sanye take \textlessem\textgreaterda\textless/em\textgreater riot gear shiga yard \textlessem\textgreaterda\textless/em\textgreater kuma gyara \textlessem\textgreaterda\textless/em\textgreater 'yancin \textlessem\textgreaterda\textless/em\textgreater tear gas. \\
+150_data & saboda haka, jami'an sanye take \textlessem\textgreaterda\textless/em\textgreater m gear shigar \textlessem\textgreaterda\textless/em\textgreater yard \textlessem\textgreaterda\textless/em\textgreater kuma gyara abubuwan \textlessem\textgreaterda\textless/em\textgreater ke tare da tear gas. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table102}
+\end{table}</pre><h4> Examples where all systems were bad </h4><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> lambun <em>ya</em> dauki fili mai fadin 19,500 km&#178; kuma <em>ya</em> rabu har kashi 14, kowanne <em>na</em> tallafa wa dabbobin daji dabam. </td> </tr><tr> <th> 100_data </th>
+  <td> a shakatawa rufe 19,500 kmold da aka raba a 14 daban-daban ecozones, kowane goyon bayan daban-daban wildray. </td> </tr><tr> <th> 150_data </th>
+  <td> a shakatawa maida hankali ne akan 19,500 kmour, kuma aka raba a 14 daban-daban ecozones, kowane goyon bayan daban-daban wildlife. </td> </tr>
+</table>
+ <br/><button onclick="showhide('103_latex')">Show/Hide LaTeX</button> <br/><pre id="103_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & lambun \textlessem\textgreaterya\textless/em\textgreater dauki fili mai fadin 19,500 km&#178; kuma \textlessem\textgreaterya\textless/em\textgreater rabu har kashi 14, kowanne \textlessem\textgreaterna\textless/em\textgreater tallafa wa dabbobin daji dabam. \\
+100_data & a shakatawa rufe 19,500 kmold da aka raba a 14 daban-daban ecozones, kowane goyon bayan daban-daban wildray. \\
+150_data & a shakatawa maida hankali ne akan 19,500 kmour, kuma aka raba a 14 daban-daban ecozones, kowane goyon bayan daban-daban wildlife. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table103}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> wani bam &#599;aya <em>ya</em> fashe <em>a</em> wajen ofishin gwamna-janar. </td> </tr><tr> <th> 100_data </th>
+  <td> daya bomb kumbura waje da gwamnatin kuma general&#226; &#8364; &#8482; s ofishin. </td> </tr><tr> <th> 150_data </th>
+  <td> daya bomb fadada waje da gwamnan janareta ta ofishin. </td> </tr>
+</table>
+ <br/><button onclick="showhide('104_latex')">Show/Hide LaTeX</button> <br/><pre id="104_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & wani bam &#599;aya \textlessem\textgreaterya\textless/em\textgreater fashe \textlessem\textgreatera\textless/em\textgreater wajen ofishin gwamna-janar. \\
+100_data & daya bomb kumbura waje da gwamnatin kuma general&#226; &#8364; &#8482; s ofishin. \\
+150_data & daya bomb fadada waje da gwamnan janareta ta ofishin. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table104}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> mun fahimci tsarin kulawa <em>na</em> jarirai <em>ya</em> zama yankin aminci ga wa&#599;annan yara. </td> </tr><tr> <th> 100_data </th>
+  <td> mun gane da foster kula da tsarin zama wani aminci zone ga wadannan yara. </td> </tr><tr> <th> 150_data </th>
+  <td> mun gane da foster kula da tsarin zama mai aminci zone ga wadannan yara. </td> </tr>
+</table>
+ <br/><button onclick="showhide('105_latex')">Show/Hide LaTeX</button> <br/><pre id="105_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & mun fahimci tsarin kulawa \textlessem\textgreaterna\textless/em\textgreater jarirai \textlessem\textgreaterya\textless/em\textgreater zama yankin aminci ga wa&#599;annan yara. \\
+100_data & mun gane da foster kula da tsarin zama wani aminci zone ga wadannan yara. \\
+150_data & mun gane da foster kula da tsarin zama mai aminci zone ga wadannan yara. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table105}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> musamman ma kamar, ikirarin <em>da</em> <em>ya</em> yi cewa zai gano ko mutum yana karyar fassarar/fahimtar kananan maganganu yadda suke. </td> </tr><tr> <th> 100_data </th>
+  <td> musamman ma, an da'awar cewa wanda zai iya gano ko mutum yana kwance ta hanyar fassarar micro-expressions daidai. </td> </tr><tr> <th> 150_data </th>
+  <td> musamman, an da'awar cewa mutum zai iya gano ko mutum yana kwance ta hanyar fassarar micro-expressions daidai. </td> </tr>
+</table>
+ <br/><button onclick="showhide('106_latex')">Show/Hide LaTeX</button> <br/><pre id="106_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & musamman ma kamar, ikirarin \textlessem\textgreaterda\textless/em\textgreater \textlessem\textgreaterya\textless/em\textgreater yi cewa zai gano ko mutum yana karyar fassarar/fahimtar kananan maganganu yadda suke. \\
+100_data & musamman ma, an da'awar cewa wanda zai iya gano ko mutum yana kwance ta hanyar fassarar micro-expressions daidai. \\
+150_data & musamman, an da'awar cewa mutum zai iya gano ko mutum yana kwance ta hanyar fassarar micro-expressions daidai. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table106}
+\end{table}</pre><table border="1">
+<tr> <th>  </th>
+  <th> Output </th> </tr><tr> <th> Ref </th>
+  <td> yawanci hasumiyoyin nazarin samaniya <em>na</em> baya sun zama tsohon yayi yanzu, inda suka zama gidajen kayan tarihi, ko kuma wuraren koyon ilimi. </td> </tr><tr> <th> 100_data </th>
+  <td> pre-zamani observatories suna yawanci a yau, kuma kasance a matsayin museums, ko shafukan ilimi. </td> </tr><tr> <th> 150_data </th>
+  <td> pre-zamani observatories yawanci kafa a yau, da kuma kasance a matsayin gidajen abinci, ko shafukan ilimi. </td> </tr>
+</table>
+ <br/><button onclick="showhide('107_latex')">Show/Hide LaTeX</button> <br/><pre id="107_latex" style="display:none">\begin{table}[t]
+  \centering
+  \begin{tabular}{c||c}
+ & Output \\ \hline \hline
+Ref & yawanci hasumiyoyin nazarin samaniya \textlessem\textgreaterna\textless/em\textgreater baya sun zama tsohon yayi yanzu, inda suka zama gidajen kayan tarihi, ko kuma wuraren koyon ilimi. \\
+100_data & pre-zamani observatories suna yawanci a yau, kuma kasance a matsayin museums, ko shafukan ilimi. \\
+150_data & pre-zamani observatories yawanci kafa a yau, da kuma kasance a matsayin gidajen abinci, ko shafukan ilimi. \\
+  \end{tabular}
+  \caption{Caption}
+  \label{tab:table107}
+\end{table}</pre><a name="bucket8"/><h3> Examples for Bucket >=1000 </h3> 
+</body>
+</html>

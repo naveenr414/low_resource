@@ -1,0 +1,6 @@
+src en, target ha
+train_data data/en-ha/processed_data/opus
+valid_data data/test/flores/dev/dev
+test_data data/test/flores/devtest/devtest
+settings: {'max_epochs': 80, 'lr': 0.0005}
+dataset size: train 150000, valid 1000000000, test 500, hyperparameter 100000000
